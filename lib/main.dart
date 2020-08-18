@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'app_card.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,48 +22,12 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: [
               //This is going to be the application card containing an Image, and the name of the app
-              Container(
-                margin: EdgeInsets.all(15.0),
-                decoration: BoxDecoration(
-                  //Card colour will be similar to the color in the application theme.
-                  color: Colors.lightBlueAccent,
-                  borderRadius: BorderRadius.circular(25.0),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(15.0),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Image(
-                          //Application Icon
-                          image: AssetImage('images/diamond.png'),
-                        ),
-                      ),
-                      Expanded(
-                        //The following column will display the application information
-                        child: Column(
-                          children: [
-                            Text(
-                              'Module: 1',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            //Application title.
-                            SizedBox(
-                              height: 15.0,
-                            ),
-                            Text(
-                              'I Am Rich',
-                              style: TextStyle(
-                                fontSize: 30.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ),
+              AppCard(
+                appIconPath: 'images/diamond.png',
+                moduleNumber: 3,
+                appTitle: 'I Am Rich',
+                cardBackgroundColor: Colors.blueGrey[900],
+                appTitleColor: Colors.white,
               )
             ],
           ),
