@@ -4,6 +4,7 @@ import 'package:flutter/painting.dart';
 //This is going to be the application card containing an Image, and the name of the app
 class AppCard extends StatelessWidget {
   AppCard({
+    this.onPress,
     this.appIconPath,
     this.moduleNumber,
     this.appTitle,
@@ -11,6 +12,7 @@ class AppCard extends StatelessWidget {
     this.appTitleColor,
   });
 
+  final Function onPress;
   final String appIconPath;
   final int moduleNumber;
   final String appTitle;
@@ -20,6 +22,7 @@ class AppCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: onPress,
       child: Container(
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
