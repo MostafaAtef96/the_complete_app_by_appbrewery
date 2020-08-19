@@ -1,16 +1,15 @@
-# the_complete_app_by_appbrewery
+# the Complete App By App Brewery
 
-A new Flutter application.
+During the journey of learning Mobile Application development using Flutter in the course by London App Brewery I have come across many interesting apps each was meant to introduce a new concept of Flutter programming.
 
-## Getting Started
+In this repository, I am going to use Flutter to create a mobile application that contains all exercises and challenges demonstrated in The Complete 2020 Flutter Development Bootcamp with Dart by App Brewery.
 
-This project is a starting point for a Flutter application.
+## I Am Rich
 
-A few resources to get you started if this is your first Flutter project:
+I Am Rich app is a very simple application but full of new basic concepts anybody needs to start programming with Flutter. In this App, you will learn:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-How to create a new Flutter App.
+-How to Scaffold a Flutter App.
+-How to deal with pubspec.yaml configuration file.
+-How to work with Assets.
+-How to Add an App Icon to Flutter Apps.
