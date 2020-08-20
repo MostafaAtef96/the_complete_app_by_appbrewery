@@ -38,6 +38,22 @@ class MyApp extends StatelessWidget {
                   appTitle: 'I Am Rich',
                   cardBackgroundColor: Colors.blueGrey[900],
                   appTitleColor: Colors.white,
+                ),
+                AppCard(
+                  onPress: () {
+//                    Navigator.push(
+//                      context,
+//                      MaterialPageRoute(
+//                        builder: (context) => IAmRichMainScreen(),
+//                      ),
+//                    );
+                  },
+                  //Image was downloaded from pngwing.com
+                  appIconPath: 'images/poor.png',
+                  moduleNumber: 5,
+                  appTitle: 'I Am Poor',
+                  cardBackgroundColor: Colors.blueGrey[900],
+                  appTitleColor: Colors.white,
                 )
               ],
             ),
