@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'app_card.dart';
 import 'i_am_rich/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -41,12 +42,12 @@ class MyApp extends StatelessWidget {
                 ),
                 AppCard(
                   onPress: () {
-//                    Navigator.push(
-//                      context,
-//                      MaterialPageRoute(
-//                        builder: (context) => IAmRichMainScreen(),
-//                      ),
-//                    );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => IAmPoorMainScreen(),
+                      ),
+                    );
                   },
                   //Image was downloaded from pngwing.com
                   appIconPath: 'images/poor.png',
