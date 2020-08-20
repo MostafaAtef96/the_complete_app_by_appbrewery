@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                   appIconPath: 'images/poor.png',
                   moduleNumber: 5,
                   appTitle: 'I Am Poor',
-                  cardBackgroundColor: Colors.blueGrey[900],
+                  cardBackgroundColor: Colors.teal[900],
                   appTitleColor: Colors.white,
                 )
               ],
