@@ -43,6 +43,7 @@ class AppCard extends StatelessWidget {
               Expanded(
                 //The following column will display the application information
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Module $moduleNumber App',
