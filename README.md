@@ -6,7 +6,9 @@ In this repository, I am going to use Flutter to create a mobile application tha
 
 ## I Am Rich
 
+<p align="center">
 <img src="ReadmeImages/IAmRich.jpeg" width="500">
+</p>
 
 **I Am Rich App** is a very simple application but full of new basic concepts anybody needs to start programming with Flutter. In this App, you will learn:
 
@@ -18,6 +20,10 @@ In this repository, I am going to use Flutter to create a mobile application tha
 
 ## I Am Poor
 
+<p align="center">
 <img src="ReadmeImages/IAmPoor.jpeg" width="500">
+</p>
 
-**I Am Poor App** is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget The to create the desired UI.
+**I Am Poor App** is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget Tree to create the desired UI.
+
+*Image was graped from pngwing.com*

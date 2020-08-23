@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
 import 'widgets/app_card.dart';
 import 'i_am_rich/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
@@ -50,6 +51,22 @@ class HomeScreen extends StatelessWidget {
                   appIconPath: 'images/poor.png',
                   moduleNumber: 5,
                   appTitle: 'I Am Poor',
+                  cardBackgroundColor: Colors.teal[900],
+                  appTitleColor: Colors.white,
+                ),
+                AppCard(
+                  onPress: () {
+                    //Go to I Am Poor App.
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MiCard(),
+                      ),
+                    );
+                  },
+                  appIconPath: 'images/BusinessCard.png',
+                  moduleNumber: 6,
+                  appTitle: 'MiCard',
                   cardBackgroundColor: Colors.teal[900],
                   appTitleColor: Colors.white,
                 )
