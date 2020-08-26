@@ -3,6 +3,7 @@ import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
 import 'widgets/app_card.dart';
 import 'i_am_rich/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -56,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 AppCard(
                   onPress: () {
-                    //Go to I Am Poor App.
+                    //Go to MiCard App.
                     Navigator.push(
                       context,
                       MaterialPageRoute(
