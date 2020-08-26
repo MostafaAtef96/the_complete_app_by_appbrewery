@@ -24,13 +24,40 @@ class HomeScreen extends StatelessWidget {
                 //This is going to be the application card containing an Image, and the name of the app
                 AppCard(
                   onPress: () {
-                    //Go to I Am Rich App.
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => IAmRichMainScreen(),
-                      ),
-                    );
+                    Alert(
+                      context: context,
+                      title: 'I Am Rich',
+                      desc:
+                          "I Am Rich App is a very simple application but full of new basic concepts anyone needs to start programming with Flutter.",
+                      image: Image.asset("images/diamond.png"),
+                      buttons: [
+                        DialogButton(
+                          child: Text(
+                            "Visit I Am Rich",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                            //Go to I Am Rich App.
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => IAmRichMainScreen(),
+                              ),
+                            );
+                          },
+                          width: 120,
+                        ),
+                        DialogButton(
+                          child: Text(
+                            "Cancel",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                          ),
+                          onPressed: () => Navigator.pop(context),
+                          width: 120,
+                        ),
+                      ],
+                    ).show();
                   },
                   appIconPath: 'images/diamond.png',
                   moduleNumber: 3,
