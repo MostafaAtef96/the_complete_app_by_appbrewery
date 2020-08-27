@@ -57,5 +57,5 @@ In this App, you will learn:
 * About Material Icons and how to add them to an app.
 
 ### Notes
-*App Icon was downloaded from pngwing.com*
-*I have added an app bar to the scaffold to have the same layout as I Am Rich app.*
+* App Icon was downloaded from pngwing.com
+* I have added an app bar to the scaffold to have the same layout as I Am Rich app.
