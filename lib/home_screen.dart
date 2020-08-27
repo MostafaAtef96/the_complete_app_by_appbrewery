@@ -67,6 +67,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: AppCard(
+                    appIconPath: 'images/BusinessCard.png',
+                    moduleNumber: 6,
+                    appTitle: 'MiCard',
+                    cardBackgroundColor: Colors.teal[900],
+                    appTitleColor: Colors.white,
                     onPress: () {
                       //Open MiCard Alert.
                       showAlertBox(
@@ -79,10 +84,14 @@ class HomeScreen extends StatelessWidget {
                         screen: MiCardMainScreen(),
                       );
                     },
-                    appIconPath: 'images/BusinessCard.png',
-                    moduleNumber: 6,
-                    appTitle: 'MiCard',
-                    cardBackgroundColor: Colors.teal[900],
+                  ),
+                ),
+                Expanded(
+                  child: AppCard(
+                    appIconPath: 'images/dicee/diceeIcon.png',
+                    moduleNumber: 7,
+                    appTitle: 'Dicee',
+                    cardBackgroundColor: Colors.red,
                     appTitleColor: Colors.white,
                   ),
                 ),
