@@ -3,52 +3,9 @@ import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
 import 'widgets/app_card.dart';
 import 'i_am_rich/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
+import 'widgets/alert_box.dart';
 
 class HomeScreen extends StatelessWidget {
-  void showAlertBox({
-    BuildContext context,
-    String alertTitle,
-    String alertDescription,
-    String alertImagePath,
-    String appTitle,
-    dynamic screen,
-  }) {
-    Alert(
-      context: context,
-      title: alertTitle,
-      desc: alertDescription,
-      image: Image.asset(alertImagePath),
-      buttons: [
-        DialogButton(
-          child: Text(
-            "Visit $appTitle",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-            //Go to I Am Rich App.
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => screen,
-              ),
-            );
-          },
-          width: 120,
-        ),
-        DialogButton(
-          child: Text(
-            "Cancel",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          onPressed: () => Navigator.pop(context),
-          width: 120,
-        ),
-      ],
-    ).show();
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -72,6 +29,7 @@ class HomeScreen extends StatelessWidget {
                   cardBackgroundColor: Colors.blueGrey[900],
                   appTitleColor: Colors.white,
                   onPress: () {
+                    //Open I Am Rich Alert.
                     showAlertBox(
                       context: context,
                       alertTitle: 'I Am Rich',
@@ -84,30 +42,36 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
                 AppCard(
-                  onPress: () {
-                    //Go to I Am Poor App.
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => IAmPoorMainScreen(),
-                      ),
-                    );
-                  },
                   //Image was downloaded from pngwing.com
                   appIconPath: 'images/poor.png',
                   moduleNumber: 5,
                   appTitle: 'I Am Poor',
                   cardBackgroundColor: Colors.teal[900],
                   appTitleColor: Colors.white,
+                  onPress: () {
+                    //Open I Am Poor Alert.
+                    showAlertBox(
+                      context: context,
+                      alertTitle: 'I Am Poor',
+                      alertDescription:
+                          'I Am Poor App is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget Tree to create the desired UI.',
+                      alertImagePath: 'images/poor.png',
+                      appTitle: 'I Am Poor',
+                      screen: IAmPoorMainScreen(),
+                    );
+                  },
                 ),
                 AppCard(
                   onPress: () {
-                    //Go to MiCard App.
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MiCard(),
-                      ),
+                    //Open MiCard Alert.
+                    showAlertBox(
+                      context: context,
+                      alertTitle: 'MiCard',
+                      alertDescription:
+                          'Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn\'t have it on you. Well, now you can get them to download your business card as an app.',
+                      alertImagePath: 'images/BusinessCard.png',
+                      appTitle: 'MiCard',
+                      screen: MiCardMainScreen(),
                     );
                   },
                   appIconPath: 'images/BusinessCard.png',
