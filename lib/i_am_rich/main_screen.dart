@@ -10,9 +10,7 @@ class IAmRichMainScreen extends StatelessWidget {
         title: Text('I Am Rich'),
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('images/diamond.png'),
-        ),
+        child: Image.asset('images/diamond.png'),
       ),
     );
   }

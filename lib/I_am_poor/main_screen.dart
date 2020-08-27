@@ -10,9 +10,7 @@ class IAmPoorMainScreen extends StatelessWidget {
         title: Text('I Am Poor'),
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('images/poor.png'),
-        ),
+        child: Image.asset('images/poor.png'),
       ),
     );
   }

@@ -35,10 +35,7 @@ class AppCard extends StatelessWidget {
           child: Row(
             children: [
               Expanded(
-                child: Image(
-                  //Application Icon
-                  image: AssetImage(appIconPath),
-                ),
+                child: Image.asset(appIconPath),
               ),
               Expanded(
                 //The following column will display the application information
