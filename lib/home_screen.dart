@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_complete_app_by_appbrewery/dicee/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
 import 'widgets/app_card.dart';
 import 'i_am_rich/main_screen.dart';
@@ -93,6 +94,18 @@ class HomeScreen extends StatelessWidget {
                     appTitle: 'Dicee',
                     cardBackgroundColor: Colors.red,
                     appTitleColor: Colors.white,
+                    onPress: () {
+                      //Open Dicee Alert.
+                      showAlertBox(
+                        context: context,
+                        alertTitle: 'Dicee',
+                        alertDescription:
+                            'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
+                        alertImagePath: 'images/dicee/diceeIcon.png',
+                        appTitle: 'Dicee',
+                        screen: DiceeMainScreen(),
+                      );
+                    },
                   ),
                 ),
               ],
