@@ -7,7 +7,7 @@ void VisitAppAlertBox({
   String alertDescription,
   String alertImagePath,
   String appTitle,
-  dynamic screen,
+  String screenRoute,
 }) {
   Alert(
     context: context,
@@ -23,12 +23,7 @@ void VisitAppAlertBox({
         onPressed: () {
           Navigator.pop(context);
           //Go to I Am Rich App.
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => screen,
-            ),
-          );
+          Navigator.pushNamed(context, screenRoute);
         },
         width: 120,
       ),

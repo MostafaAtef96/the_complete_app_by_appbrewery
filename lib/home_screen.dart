@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_complete_app_by_appbrewery/dicee/main_screen.dart';
-import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
 import 'widgets/app_card.dart';
-import 'i_am_rich/main_screen.dart';
-import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/visit_app_alert_box.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
 
@@ -47,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                           'I Am Rich App is a very simple application but full of new basic concepts anyone needs to start programming with Flutter.',
                       alertImagePath: 'images/diamond.png',
                       appTitle: 'I Am Rich',
-                      screen: IAmRichMainScreen(),
+                      screenRoute: '/IAmRich',
                     );
                   },
                 ),
@@ -69,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                           'I Am Poor App is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget Tree to create the desired UI.',
                       alertImagePath: 'images/poor.png',
                       appTitle: 'I Am Poor',
-                      screen: IAmPoorMainScreen(),
+                      screenRoute: '/IAmPoor',
                     );
                   },
                 ),
@@ -90,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                           'Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn\'t have it on you. Well, now you can get them to download your business card as an app.',
                       alertImagePath: 'images/BusinessCard.png',
                       appTitle: 'MiCard',
-                      screen: MiCardMainScreen(),
+                      screenRoute: '/MiCard',
                     );
                   },
                 ),
@@ -111,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                           'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
                       alertImagePath: 'images/dicee/diceeIcon.png',
                       appTitle: 'Dicee',
-                      screen: DiceeMainScreen(),
+                      screenRoute: '/dicee',
                     );
                   },
                 ),
