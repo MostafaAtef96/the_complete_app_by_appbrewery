@@ -21,7 +21,7 @@ void ExitAppAlertBox({
         ),
         onPressed: () => terminate
             ? SystemChannels.platform.invokeMethod('SystemNavigator.pop')
-            : Navigator.pop(context),
+            : Navigator.of(context).popUntil((route) => route.isFirst),
         color: Colors.redAccent,
       ),
       DialogButton(
