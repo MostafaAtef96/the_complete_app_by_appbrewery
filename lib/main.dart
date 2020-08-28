@@ -9,6 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Return the main screen of the Full App.
-    return HomeScreen();
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+      },
+    );
   }
 }
