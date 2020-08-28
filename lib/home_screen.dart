@@ -4,9 +4,8 @@ import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
 import 'widgets/app_card.dart';
 import 'i_am_rich/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
-import 'widgets/alert_box.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
-import 'package:flutter/services.dart';
+import 'package:the_complete_app_by_appbrewery/widgets/visit_app_alert_box.dart';
+import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -15,32 +14,11 @@ class HomeScreen extends StatelessWidget {
       home: Builder(
         builder: (context) => WillPopScope(
           onWillPop: () async {
-            Alert(
+            ExitAppAlertBox(
               context: context,
-              type: AlertType.warning,
-              title: "Exit!",
-              desc: "Are you sure you want to exit?",
-              buttons: [
-                DialogButton(
-                  child: Text(
-                    "Yes",
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                  onPressed: () => SystemChannels.platform
-                      .invokeMethod('SystemNavigator.pop'),
-                  color: Colors.redAccent,
-                ),
-                DialogButton(
-                  child: Text(
-                    "No",
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                  onPressed: () => Navigator.pop(context),
-                  color: Color(0xff40c4ff),
-                ),
-              ],
-            ).show();
-
+              appTitle: 'The Complete App By Appbrewery',
+              terminate: true,
+            );
             return false;
           },
           child: Scaffold(
@@ -64,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                       appTitleColor: Colors.white,
                       onPress: () {
                         //Open I Am Rich Alert.
-                        showAlertBox(
+                        VisitAppAlertBox(
                           context: context,
                           alertTitle: 'I Am Rich',
                           alertDescription:
@@ -86,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                       appTitleColor: Colors.white,
                       onPress: () {
                         //Open I Am Poor Alert.
-                        showAlertBox(
+                        VisitAppAlertBox(
                           context: context,
                           alertTitle: 'I Am Poor',
                           alertDescription:
@@ -107,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                       appTitleColor: Colors.white,
                       onPress: () {
                         //Open MiCard Alert.
-                        showAlertBox(
+                        VisitAppAlertBox(
                           context: context,
                           alertTitle: 'MiCard',
                           alertDescription:
@@ -128,7 +106,7 @@ class HomeScreen extends StatelessWidget {
                       appTitleColor: Colors.white,
                       onPress: () {
                         //Open Dicee Alert.
-                        showAlertBox(
+                        VisitAppAlertBox(
                           context: context,
                           alertTitle: 'Dicee',
                           alertDescription:

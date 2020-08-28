@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
-void showAlertBox({
+void VisitAppAlertBox({
   BuildContext context,
   String alertTitle,
   String alertDescription,
