@@ -108,7 +108,7 @@ class HomeScreen extends StatelessWidget {
                           'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
                       alertImagePath: 'images/dicee/diceeIcon.png',
                       appTitle: 'Dicee',
-                      screenRoute: '/dicee',
+                      screenRoute: '/Dicee',
                     );
                   },
                 ),
@@ -130,7 +130,7 @@ class HomeScreen extends StatelessWidget {
                           'Magic Ball will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.',
                       alertImagePath: 'images/MagicBall.png',
                       appTitle: 'Magic Ball',
-                      screenRoute: '/dicee',
+                      screenRoute: '/MagicBall',
                     );
                   },
                 ),
