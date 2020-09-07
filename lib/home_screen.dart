@@ -93,6 +93,7 @@ class HomeScreen extends StatelessWidget {
               ),
               Expanded(
                 child: AppCard(
+                  //Image was downloaded from pngwing.com
                   appIconPath: 'images/dicee/diceeIcon.png',
                   moduleNumber: 7,
                   appTitle: 'Dicee',
@@ -107,6 +108,28 @@ class HomeScreen extends StatelessWidget {
                           'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
                       alertImagePath: 'images/dicee/diceeIcon.png',
                       appTitle: 'Dicee',
+                      screenRoute: '/dicee',
+                    );
+                  },
+                ),
+              ),
+              Expanded(
+                child: AppCard(
+                  //Image was downloaded from pngwing.com
+                  appIconPath: 'images/MagicBall.png',
+                  moduleNumber: 8,
+                  appTitle: 'Magic Ball',
+                  cardBackgroundColor: Colors.red,
+                  appTitleColor: Colors.white,
+                  onPress: () {
+                    //Open MagicBall Alert.
+                    VisitAppAlertBox(
+                      context: context,
+                      alertTitle: 'Magic Ball',
+                      alertDescription:
+                          'Magic Ball will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.',
+                      alertImagePath: 'images/MagicBall.png',
+                      appTitle: 'Magic Ball',
                       screenRoute: '/dicee',
                     );
                   },
