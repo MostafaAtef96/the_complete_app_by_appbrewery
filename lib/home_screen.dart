@@ -119,7 +119,7 @@ class HomeScreen extends StatelessWidget {
                   appIconPath: 'images/magic_ball/MagicBallIcon.png',
                   moduleNumber: 8,
                   appTitle: 'Magic Ball',
-                  cardBackgroundColor: Colors.red,
+                  cardBackgroundColor: Colors.blue[900],
                   appTitleColor: Colors.white,
                   onPress: () {
                     //Open MagicBall Alert.
