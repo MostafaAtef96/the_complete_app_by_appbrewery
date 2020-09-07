@@ -28,6 +28,7 @@ flutter:
   assets:
     - images/
     - images/dicee/
+    - images/magic_ball/
 
   fonts:
     - family: Pacifico

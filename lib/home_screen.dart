@@ -116,7 +116,7 @@ class HomeScreen extends StatelessWidget {
               Expanded(
                 child: AppCard(
                   //Image was downloaded from pngwing.com
-                  appIconPath: 'images/MagicBall.png',
+                  appIconPath: 'images/magic_ball/MagicBallIcon.png',
                   moduleNumber: 8,
                   appTitle: 'Magic Ball',
                   cardBackgroundColor: Colors.red,
@@ -128,7 +128,7 @@ class HomeScreen extends StatelessWidget {
                       alertTitle: 'Magic Ball',
                       alertDescription:
                           'Magic Ball will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.',
-                      alertImagePath: 'images/MagicBall.png',
+                      alertImagePath: 'images/magic_ball/MagicBallIcon.png',
                       appTitle: 'Magic Ball',
                       screenRoute: '/MagicBall',
                     );
