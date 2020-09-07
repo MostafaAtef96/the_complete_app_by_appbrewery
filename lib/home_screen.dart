@@ -135,6 +135,28 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
               ),
+              Expanded(
+                child: AppCard(
+                  //Image was downloaded from pngwing.com
+                  appIconPath: 'images/xylophone.png',
+                  moduleNumber: 9,
+                  appTitle: 'Xylophone',
+                  cardBackgroundColor: Colors.blue[900],
+                  appTitleColor: Colors.white,
+                  onPress: () {
+                    //Open Xylophone Alert.
+                    VisitAppAlertBox(
+                      context: context,
+                      alertTitle: 'Xylophone',
+                      alertDescription:
+                          'Xylophone is a music app that plays Xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
+                      alertImagePath: 'images/xylophone.png',
+                      appTitle: 'Xylophone',
+                      screenRoute: '/MagicBall',
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),
