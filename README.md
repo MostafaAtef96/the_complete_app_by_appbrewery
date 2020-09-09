@@ -59,3 +59,30 @@ In this App, you will learn:
 ### Notes
 * App Icon was downloaded from pngwing.com
 * I have added an app bar to the scaffold to have the same layout as I Am Rich app.
+
+## Dicee
+
+<p align="center">
+<img src="ReadmeImages/Dicee.gif" width="500">
+</p>
+
+### What is Dicee?
+
+**Dicee** is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!
+
+### Objectives
+
+In this App, you will learn:
+* How to use Flutter stateless widgets to design the user interface.
+* How to use Flutter stateful widgets to update the user interface.
+* How to change the properties of various widgets.
+* How to use onClick listeners to detect when buttons are pressed.
+* How to use setState to mark the widget tree as dirty and requiring update on the next render.
+* How to use expanded to make widgets adapt to screen dimensions.
+* about string interpolation and how to use it.
+* about basic dart programming concepts such as data types and functions.
+* Code and use gesture controls.
+
+### Notes
+* App Icon was downloaded from pngwing.com
+* Gif demo was downloaded from the course resources.
