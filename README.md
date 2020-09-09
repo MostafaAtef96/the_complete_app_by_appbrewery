@@ -85,4 +85,19 @@ In this App, you will learn:
 
 ### Notes
 * App Icon was downloaded from pngwing.com
-* Gif demo was downloaded from the course resources.
+* Demo Gif was downloaded from the course resources.
+
+## Magic 8 Ball
+
+<p align="center">
+<img src="ReadmeMedia/Magic8Ball.gif" width="500">
+</p>
+
+### What is Magic 8 Ball?
+
+**Magic 8 Ball** will solidify what you've learn't in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
+
+We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.
+
+### Notes
+*App Icon was downloaded from pngwing.com*
