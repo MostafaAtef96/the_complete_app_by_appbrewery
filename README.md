@@ -101,3 +101,4 @@ We’re going to make a magical 8 ball app, it will give you the answers to all 
 
 ### Notes
 *App Icon was downloaded from pngwing.com*
+*Demo Gif was downloaded from the course resources.*
