@@ -7,7 +7,7 @@ In this repository, I am going to use Flutter to create a mobile application tha
 ## I Am Rich
 
 <p align="center">
-<img src="ReadmeImages/IAmRich.jpeg" width="500">
+<img src="ReadmeMedia/IAmRich.jpeg" width="500">
 </p>
 
 ### What is I Am Rich?
@@ -26,7 +26,7 @@ In this App, you will learn:
 ## I Am Poor
 
 <p align="center">
-<img src="ReadmeImages/IAmPoor.jpeg" width="500">
+<img src="ReadmeMedia/IAmPoor.jpeg" width="500">
 </p>
 
 ### What is I Am Poor?
@@ -39,7 +39,7 @@ In this App, you will learn:
 ## MiCard
 
 <p align="center">
-<img src="ReadmeImages/MiCard.jpeg" width="500">
+<img src="ReadmeMedia/MiCard.jpeg" width="500">
 </p>
 
 ### What is Mi Card?
@@ -63,7 +63,7 @@ In this App, you will learn:
 ## Dicee
 
 <p align="center">
-<img src="ReadmeImages/Dicee.gif" width="500">
+<img src="ReadmeMedia/Dicee.gif" width="500">
 </p>
 
 ### What is Dicee?
