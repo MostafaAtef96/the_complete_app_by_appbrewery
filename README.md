@@ -100,5 +100,5 @@ In this App, you will learn:
 We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.
 
 ### Notes
-*App Icon was downloaded from pngwing.com*
-*Demo Gif was downloaded from the course resources.*
+* App Icon was downloaded from pngwing.com
+* Demo Gif was downloaded from the course resources.
