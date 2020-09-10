@@ -138,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                     context: context,
                     alertTitle: 'Xylophone',
                     alertDescription:
-                        'Xylophone is a music app that plays Xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
+                        'Xylophone is a music app that plays xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
                     alertImagePath: 'images/xylophone.png',
                     appTitle: 'Xylophone',
                     screenRoute: '/Xylophone',

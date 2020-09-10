@@ -29,6 +29,7 @@ flutter:
     - images/
     - images/dicee/
     - images/magic_ball/
+    - assets/xylophone/
 
   fonts:
     - family: Pacifico
