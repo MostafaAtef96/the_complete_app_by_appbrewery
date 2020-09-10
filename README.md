@@ -81,7 +81,7 @@ In this App, you will learn:
 * How to use expanded to make widgets adapt to screen dimensions.
 * about string interpolation and how to use it.
 * about basic dart programming concepts such as data types and functions.
-* Code and use gesture controls.
+* How to code and use gesture controls.
 
 ### Notes
 * App Icon was downloaded from pngwing.com
@@ -102,3 +102,6 @@ We’re going to make a magical 8 ball app, it will give you the answers to all 
 ### Notes
 * App Icon was downloaded from pngwing.com
 * Demo Gif was downloaded from the course resources.
+
+## Packages
+* [rflutter_alert](https://pub.dev/packages/rflutter_alert) v1.0.6
