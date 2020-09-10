@@ -37,6 +37,7 @@ class XylophoneMainScreen extends StatelessWidget {
         return false;
       },
       child: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -130,7 +130,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/xylophone.png',
                 moduleNumber: 9,
                 appTitle: 'Xylophone',
-                cardBackgroundColor: Colors.blue[900],
+                cardBackgroundColor: Colors.green[900],
                 appTitleColor: Colors.white,
                 onPress: () {
                   //Open Xylophone Alert.
