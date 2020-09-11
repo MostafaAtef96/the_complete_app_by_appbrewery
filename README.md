@@ -103,5 +103,30 @@ We’re going to make a magical 8 ball app, it will give you the answers to all 
 * App Icon was downloaded from pngwing.com
 * Demo Gif was downloaded from the course resources.
 
+## Xylophone
+
+<p align="center">
+<img src="ReadmeMedia/Xylophone.jpeg" width="500">
+</p>
+
+### What is Dicee?
+
+In **Xylophone** module we will be diving into more Dart programming concepts and learning how to use open source Flutter packages. By the end of this module, you should be comfortable using Flutter packages and building repeated widgets.
+
+We’re going to make a music app that plays Xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.
+
+### Objectives
+
+In this App, you will learn:
+* How to incorporate open source libraries of code into a project using Flutter Packages.
+* How to play sound on both iOS and Android.
+* How to generate repeated user interface Widgets.
+* How to use Dart functions that can take input arguments as well as return an output.
+* Dart arrow syntax for writing one line functions.
+
+### Notes
+*Image was downloaded from pngwing.com*
+
 ## Packages
-* [rflutter_alert](https://pub.dev/packages/rflutter_alert) v1.0.6
+* [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.0.6
+* [AudioPlayers](https://pub.dev/packages/audioplayers) v0.16.1
