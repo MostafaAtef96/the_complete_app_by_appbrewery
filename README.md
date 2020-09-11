@@ -109,7 +109,7 @@ We’re going to make a magical 8 ball app, it will give you the answers to all 
 <img src="ReadmeMedia/Xylophone.jpeg" width="500">
 </p>
 
-### What is Dicee?
+### What is Xylophone?
 
 In **Xylophone** module we will be diving into more Dart programming concepts and learning how to use open source Flutter packages. By the end of this module, you should be comfortable using Flutter packages and building repeated widgets.
 
@@ -125,7 +125,8 @@ In this App, you will learn:
 * Dart arrow syntax for writing one line functions.
 
 ### Notes
-*Image was downloaded from pngwing.com*
+* Image was downloaded from pngwing.com
+* I have added a text child to buttons in the home screen representing the Magic Scale.
 
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.0.6
