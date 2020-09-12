@@ -13,7 +13,10 @@ void VisitAppAlertBox({
     context: context,
     title: alertTitle,
     desc: alertDescription,
-    image: Image.asset(alertImagePath),
+    image: Image.asset(
+      alertImagePath,
+      width: 100.0,
+    ),
     buttons: [
       DialogButton(
         child: Text(

@@ -38,6 +38,7 @@ class AppCard extends StatelessWidget {
               Expanded(
                 child: Image.asset(
                   appIconPath,
+                  height: 100.0,
                 ),
               ),
               Expanded(
