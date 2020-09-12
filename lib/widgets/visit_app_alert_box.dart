@@ -15,7 +15,7 @@ void VisitAppAlertBox({
     desc: alertDescription,
     image: Image.asset(
       alertImagePath,
-      width: 100.0,
+      height: 150.0,
     ),
     buttons: [
       DialogButton(
