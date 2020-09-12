@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/widgets.dart';
 
 //This is going to be the application card containing an Image, and the name of the app
 class AppCard extends StatelessWidget {
@@ -35,7 +36,9 @@ class AppCard extends StatelessWidget {
           child: Row(
             children: [
               Expanded(
-                child: Image.asset(appIconPath),
+                child: Image.asset(
+                  appIconPath,
+                ),
               ),
               Expanded(
                 //The following column will display the application information

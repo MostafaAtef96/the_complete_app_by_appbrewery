@@ -145,6 +145,26 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
               ),
+              AppCard(
+                //Image was downloaded from pngwing.com
+                appIconPath: 'images/quizzler.png',
+                moduleNumber: 10,
+                appTitle: 'Quizzler',
+                cardBackgroundColor: Colors.green[900],
+                appTitleColor: Colors.white,
+                onPress: () {
+                  //Open Quizzler Alert.
+                  VisitAppAlertBox(
+                    context: context,
+                    alertTitle: 'Quizzler',
+                    alertDescription:
+                        'Quizzler is a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!',
+                    alertImagePath: 'images/quizzler.png',
+                    appTitle: 'Quizzler',
+                    screenRoute: '/Quizzler',
+                  );
+                },
+              ),
             ],
           ),
         ),
