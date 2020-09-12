@@ -126,7 +126,7 @@ In this App, you will learn:
 
 ### Notes
 * Image was downloaded from pngwing.com
-* I have added a text child to buttons in the home screen representing the Magic Scale.
+* I have added a text child to buttons in the home screen representing the Music Scale.
 
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.0.6
