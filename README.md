@@ -57,7 +57,7 @@ In this App, you will learn:
 * About Material Icons and how to add them to an app.
 
 ### Notes
-* App Icon was downloaded from pngwing.com
+* App Icon was downloaded from pngtree.com
 * I have added an app bar to the scaffold to have the same layout as I Am Rich app.
 
 ## Dicee
@@ -84,7 +84,7 @@ In this App, you will learn:
 * How to code and use gesture controls.
 
 ### Notes
-* App Icon was downloaded from pngwing.com
+* App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
 
 ## Magic 8 Ball
@@ -100,7 +100,7 @@ In this App, you will learn:
 We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.
 
 ### Notes
-* App Icon was downloaded from pngwing.com
+* App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
 
 ## Xylophone
@@ -125,7 +125,7 @@ In this App, you will learn:
 * Dart arrow syntax for writing one line functions.
 
 ### Notes
-* Image was downloaded from pngwing.com
+* Image was downloaded from pngtree.com
 * I have added a text child to buttons in the home screen representing the Music Scale.
 
 ## Packages

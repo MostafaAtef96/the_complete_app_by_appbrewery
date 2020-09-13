@@ -53,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                 mainScreenRoute: '/MiCard',
               ),
               AppCard(
-                //Image was downloaded from pngwing.com
+                //Image was downloaded from pngtree.com
                 appIconPath: 'images/dicee/diceeIcon.png',
                 moduleNumber: 7,
                 appTitle: 'Dicee',
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                 mainScreenRoute: '/Dicee',
               ),
               AppCard(
-                //Image was downloaded from pngwing.com
+                //Image was downloaded from  pngtree.com
                 appIconPath: 'images/magic_ball/MagicBallIcon.png',
                 moduleNumber: 8,
                 appTitle: 'Magic Ball',
@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                 mainScreenRoute: '/MagicBall',
               ),
               AppCard(
-                //Image was downloaded from pngwing.com
+                //Image was downloaded from pngtree.com
                 appIconPath: 'images/xylophone.png',
                 moduleNumber: 9,
                 appTitle: 'Xylophone',
@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                 mainScreenRoute: '/Xylophone',
               ),
               AppCard(
-                //Image was downloaded from pngwing.com
+                //Image was downloaded from pngtree.com
                 appIconPath: 'images/quizzler.png',
                 moduleNumber: 10,
                 appTitle: 'Quizzler',
