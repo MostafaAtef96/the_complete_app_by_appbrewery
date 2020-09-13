@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'widgets/app_card.dart';
-import 'package:the_complete_app_by_appbrewery/widgets/visit_app_alert_box.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
+import 'constants.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -31,8 +31,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/diamond.png',
                 moduleNumber: 3,
                 appTitle: 'I Am Rich',
-                appDescription:
-                    'I Am Rich App is a very simple application but full of new basic concepts anyone needs to start programming with Flutter.',
+                appDescription: appDescription['appDescription'],
                 cardBackgroundColor: Colors.blueGrey[900],
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/IAmRich',
@@ -42,8 +41,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/poor.png',
                 moduleNumber: 5,
                 appTitle: 'I Am Poor',
-                appDescription:
-                    'I Am Poor App is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget Tree to create the desired UI.',
+                appDescription: appDescription['IAmPoor'],
                 cardBackgroundColor: Colors.teal[900],
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/IAmPoor',
@@ -52,8 +50,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/BusinessCard.png',
                 moduleNumber: 6,
                 appTitle: 'MiCard',
-                appDescription:
-                    'Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn\'t have it on you. Well, now you can get them to download your business card as an app.',
+                appDescription: appDescription['MiCard'],
                 cardBackgroundColor: Colors.teal[900],
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/MiCard',
@@ -63,8 +60,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/dicee/diceeIcon.png',
                 moduleNumber: 7,
                 appTitle: 'Dicee',
-                appDescription:
-                    'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
+                appDescription: appDescription['Dicee'],
                 cardBackgroundColor: Colors.red,
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Dicee',
@@ -74,8 +70,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/magic_ball/MagicBallIcon.png',
                 moduleNumber: 8,
                 appTitle: 'Magic Ball',
-                appDescription:
-                    'Magic Ball will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.',
+                appDescription: appDescription['MagicBall'],
                 cardBackgroundColor: Colors.blue[900],
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/MagicBall',
@@ -85,8 +80,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/xylophone.png',
                 moduleNumber: 9,
                 appTitle: 'Xylophone',
-                appDescription:
-                    'Xylophone is a music app that plays xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
+                appDescription: appDescription['Xylophone'],
                 cardBackgroundColor: Colors.green[900],
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Xylophone',
@@ -96,8 +90,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/quizzler.png',
                 moduleNumber: 10,
                 appTitle: 'Quizzler',
-                appDescription:
-                    'Quizzler is a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!',
+                appDescription: appDescription['Quizzler'],
                 cardBackgroundColor: Colors.green[900],
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Quizzler',
