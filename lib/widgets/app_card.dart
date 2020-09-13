@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'visit_app_alert_box.dart';
+import 'package:the_complete_app_by_appbrewery/constants.dart';
 
 //This is going to be the application card containing an Image, and the name of the app
 class AppCard extends StatelessWidget {
@@ -9,7 +10,6 @@ class AppCard extends StatelessWidget {
     this.appIconPath,
     this.moduleNumber,
     this.appTitle,
-    this.appDescription,
     this.cardBackgroundColor,
     this.appTitleColor,
     this.mainScreenRoute,
@@ -18,7 +18,6 @@ class AppCard extends StatelessWidget {
   final String appIconPath;
   final int moduleNumber;
   final String appTitle;
-  final String appDescription;
   final Color cardBackgroundColor;
   final Color appTitleColor;
   final String mainScreenRoute;
@@ -79,7 +78,7 @@ class AppCard extends StatelessWidget {
         VisitAppAlertBox(
           context: context,
           alertTitle: appTitle,
-          alertDescription: appDescription,
+          alertDescription: appDescription[appTitle],
           alertImagePath: appIconPath,
           appTitle: appTitle,
           screenRoute: mainScreenRoute,
