@@ -31,139 +31,76 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/diamond.png',
                 moduleNumber: 3,
                 appTitle: 'I Am Rich',
+                appDescription:
+                    'I Am Rich App is a very simple application but full of new basic concepts anyone needs to start programming with Flutter.',
                 cardBackgroundColor: Colors.blueGrey[900],
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open I Am Rich Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'I Am Rich',
-                    alertDescription:
-                        'I Am Rich App is a very simple application but full of new basic concepts anyone needs to start programming with Flutter.',
-                    alertImagePath: 'images/diamond.png',
-                    appTitle: 'I Am Rich',
-                    screenRoute: '/IAmRich',
-                  );
-                },
+                mainScreenRoute: '/IAmRich',
               ),
               AppCard(
                 //Image was downloaded from pngwing.com
                 appIconPath: 'images/poor.png',
                 moduleNumber: 5,
                 appTitle: 'I Am Poor',
+                appDescription:
+                    'I Am Poor App is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget Tree to create the desired UI.',
                 cardBackgroundColor: Colors.teal[900],
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open I Am Poor Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'I Am Poor',
-                    alertDescription:
-                        'I Am Poor App is similar to the I Am Rich App. The main idea is to practice creating a new Flutter App from Scratch, and following a given Widget Tree to create the desired UI.',
-                    alertImagePath: 'images/poor.png',
-                    appTitle: 'I Am Poor',
-                    screenRoute: '/IAmPoor',
-                  );
-                },
+                mainScreenRoute: '/IAmPoor',
               ),
               AppCard(
                 appIconPath: 'images/BusinessCard.png',
                 moduleNumber: 6,
                 appTitle: 'MiCard',
+                appDescription:
+                    'Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn\'t have it on you. Well, now you can get them to download your business card as an app.',
                 cardBackgroundColor: Colors.teal[900],
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open MiCard Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'MiCard',
-                    alertDescription:
-                        'Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn\'t have it on you. Well, now you can get them to download your business card as an app.',
-                    alertImagePath: 'images/BusinessCard.png',
-                    appTitle: 'MiCard',
-                    screenRoute: '/MiCard',
-                  );
-                },
+                mainScreenRoute: '/MiCard',
               ),
               AppCard(
                 //Image was downloaded from pngwing.com
                 appIconPath: 'images/dicee/diceeIcon.png',
                 moduleNumber: 7,
                 appTitle: 'Dicee',
+                appDescription:
+                    'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
                 cardBackgroundColor: Colors.red,
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open Dicee Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'Dicee',
-                    alertDescription:
-                        'Dicee is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!',
-                    alertImagePath: 'images/dicee/diceeIcon.png',
-                    appTitle: 'Dicee',
-                    screenRoute: '/Dicee',
-                  );
-                },
+                mainScreenRoute: '/Dicee',
               ),
               AppCard(
                 //Image was downloaded from pngwing.com
                 appIconPath: 'images/magic_ball/MagicBallIcon.png',
                 moduleNumber: 8,
                 appTitle: 'Magic Ball',
+                appDescription:
+                    'Magic Ball will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.',
                 cardBackgroundColor: Colors.blue[900],
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open MagicBall Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'Magic Ball',
-                    alertDescription:
-                        'Magic Ball will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.',
-                    alertImagePath: 'images/magic_ball/MagicBallIcon.png',
-                    appTitle: 'Magic Ball',
-                    screenRoute: '/MagicBall',
-                  );
-                },
+                mainScreenRoute: '/MagicBall',
               ),
               AppCard(
                 //Image was downloaded from pngwing.com
                 appIconPath: 'images/xylophone.png',
                 moduleNumber: 9,
                 appTitle: 'Xylophone',
+                appDescription:
+                    'Xylophone is a music app that plays xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
                 cardBackgroundColor: Colors.green[900],
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open Xylophone Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'Xylophone',
-                    alertDescription:
-                        'Xylophone is a music app that plays xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
-                    alertImagePath: 'images/xylophone.png',
-                    appTitle: 'Xylophone',
-                    screenRoute: '/Xylophone',
-                  );
-                },
+                mainScreenRoute: '/Xylophone',
               ),
               AppCard(
                 //Image was downloaded from pngwing.com
                 appIconPath: 'images/quizzler.png',
                 moduleNumber: 10,
                 appTitle: 'Quizzler',
+                appDescription:
+                    'Quizzler is a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!',
                 cardBackgroundColor: Colors.green[900],
                 appTitleColor: Colors.white,
-                onPress: () {
-                  //Open Quizzler Alert.
-                  VisitAppAlertBox(
-                    context: context,
-                    alertTitle: 'Quizzler',
-                    alertDescription:
-                        'Quizzler is a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!',
-                    alertImagePath: 'images/quizzler.png',
-                    appTitle: 'Quizzler',
-                    screenRoute: '/Quizzler',
-                  );
-                },
+                mainScreenRoute: '/Quizzler',
               ),
             ],
           ),

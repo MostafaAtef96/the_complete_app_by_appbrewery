@@ -1,29 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
+import 'visit_app_alert_box.dart';
 
 //This is going to be the application card containing an Image, and the name of the app
 class AppCard extends StatelessWidget {
   AppCard({
-    this.onPress,
     this.appIconPath,
     this.moduleNumber,
     this.appTitle,
+    this.appDescription,
     this.cardBackgroundColor,
     this.appTitleColor,
+    this.mainScreenRoute,
   });
 
-  final Function onPress;
   final String appIconPath;
   final int moduleNumber;
   final String appTitle;
+  final String appDescription;
   final Color cardBackgroundColor;
   final Color appTitleColor;
+  final String mainScreenRoute;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPress,
       child: Container(
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
@@ -72,6 +74,17 @@ class AppCard extends StatelessWidget {
           ),
         ),
       ),
+      onTap: () {
+        //Open App Alert.
+        VisitAppAlertBox(
+          context: context,
+          alertTitle: appTitle,
+          alertDescription: appDescription,
+          alertImagePath: appIconPath,
+          appTitle: appTitle,
+          screenRoute: mainScreenRoute,
+        );
+      },
     );
   }
 }
