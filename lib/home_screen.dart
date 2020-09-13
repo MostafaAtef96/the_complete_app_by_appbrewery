@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/app_card.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
-import 'constants.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

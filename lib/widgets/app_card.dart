@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
-import 'visit_app_alert_box.dart';
+import 'package:the_complete_app_by_appbrewery/widgets/visit_app_alert_box.dart';
 import 'package:the_complete_app_by_appbrewery/constants.dart';
 
 //This is going to be the application card containing an Image, and the name of the app
