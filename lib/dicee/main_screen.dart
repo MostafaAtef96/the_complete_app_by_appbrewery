@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
 import 'dart:math';
+import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 
 class DiceeMainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        ExitAppAlertBox(
-          context: context,
-          appTitle: 'Dicee',
-          terminate: false,
-        );
-        return false;
-      },
-      child: Scaffold(
+    return AppMainWidget(
+      appTitle: 'Dicee',
+      appWidgetTree: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
           centerTitle: true,
