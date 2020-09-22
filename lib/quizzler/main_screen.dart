@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
-import 'package:the_complete_app_by_appbrewery/quizzler/question.dart';
+import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 
 class QuizzlerMainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        ExitAppAlertBox(
-          context: context,
-          appTitle: 'Quizzler',
-          terminate: false,
-        );
-        return false;
-      },
-      child: Scaffold(
-        backgroundColor: Colors.grey.shade900,
-        body: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
-            child: QuizPage(),
-          ),
+    return AppMainWidget(
+      appTitle: 'Quizzler',
+      appWidgetTree: Quizzler(),
+    );
+  }
+}
+
+class Quizzler extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey.shade900,
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
+          child: QuizPage(),
         ),
       ),
     );
