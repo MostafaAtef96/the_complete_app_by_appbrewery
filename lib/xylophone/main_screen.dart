@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
-import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
 import 'package:audioplayers/audio_cache.dart';
 
 class XylophoneMainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AppMainWidget();
+    return AppMainWidget(
+      appTitle: 'Xylophone',
+      appWidgetTree: Xylophone(),
+    );
   }
 }
-
-//WillPopScope(
-//onWillPop: () async {
-//ExitAppAlertBox(
-//context: context,
-//appTitle: 'Xylophone',
-//terminate: false,
-//);
-//return false;
-//},
-//child: Xylophone(),
-//);
 
 class Xylophone extends StatelessWidget {
   void playSound(int noteID) {
