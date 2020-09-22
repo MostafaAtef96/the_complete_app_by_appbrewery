@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
 import 'dart:math';
+import 'package:the_complete_app_by_appbrewery/main.dart';
 
 class MagicBallMainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        ExitAppAlertBox(
-          context: context,
-          appTitle: 'Magic Ball',
-          terminate: false,
-        );
-        return false;
-      },
-      child: BallPage(),
+    return AppMainWidget(
+      appTitle: 'Magic Ball',
+      appWidgetTree: BallPage(),
     );
   }
 }
