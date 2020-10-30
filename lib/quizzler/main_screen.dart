@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
+import 'package:the_complete_app_by_appbrewery/quizzler/quiz_brain.dart';
 
 class QuizzlerMainScreen extends StatelessWidget {
   @override
@@ -32,6 +33,7 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
+  QuizBrain quizBrain = QuizBrain();
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -44,7 +46,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                '',
+                quizBrain.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -67,7 +69,11 @@ class _QuizPageState extends State<QuizPage> {
                   fontSize: 20.0,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  quizBrain.nextQuestion();
+                });
+              },
             ),
           ),
         ),
@@ -83,7 +89,11 @@ class _QuizPageState extends State<QuizPage> {
                   color: Colors.white,
                 ),
               ),
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  quizBrain.nextQuestion();
+                });
+              },
             ),
           ),
         ),
