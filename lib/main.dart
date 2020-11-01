@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //Return the main screen of the Full App.
     return MaterialApp(
+//      theme: ThemeData.dark(),
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),

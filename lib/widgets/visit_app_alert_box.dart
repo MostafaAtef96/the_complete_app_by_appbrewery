@@ -20,8 +20,11 @@ void VisitAppAlertBox({
     buttons: [
       DialogButton(
         child: Text(
-          "Visit $appTitle",
-          style: TextStyle(color: Colors.white, fontSize: 20),
+          "Visit",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+          ),
         ),
         onPressed: () {
           Navigator.pop(context);
@@ -33,7 +36,10 @@ void VisitAppAlertBox({
       DialogButton(
         child: Text(
           "Cancel",
-          style: TextStyle(color: Colors.white, fontSize: 20),
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+          ),
         ),
         onPressed: () => Navigator.pop(context),
         width: 120,
