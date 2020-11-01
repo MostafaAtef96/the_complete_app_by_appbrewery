@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/quizzler.png',
                 moduleNumber: 10,
                 appTitle: 'Quizzler',
-                cardBackgroundColor: Colors.green[900],
+                cardBackgroundColor: Colors.grey.shade900,
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Quizzler',
               ),
