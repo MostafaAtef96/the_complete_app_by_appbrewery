@@ -13,18 +13,18 @@ class DestiniMainScreen extends StatelessWidget {
           title: Text('Destini'),
           backgroundColor: Colors.red,
         ),
-        body: Destini(),
+        body: StoryPage(),
       ),
     );
   }
 }
 
-class Destini extends StatefulWidget {
+class StoryPage extends StatefulWidget {
   @override
-  _DestiniState createState() => _DestiniState();
+  _StoryPageState createState() => _StoryPageState();
 }
 
-class _DestiniState extends State<Destini> {
+class _StoryPageState extends State<StoryPage> {
   @override
   Widget build(BuildContext context) {
     return Container();
