@@ -89,10 +89,10 @@ class HomeScreen extends StatelessWidget {
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
-                appIconPath: 'images/quizzler.png',
+                appIconPath: 'images/destini.png',
                 moduleNumber: 11,
                 appTitle: 'Destini',
-                cardBackgroundColor: Colors.grey.shade900,
+                cardBackgroundColor: Colors.blue,
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Destini',
               ),
