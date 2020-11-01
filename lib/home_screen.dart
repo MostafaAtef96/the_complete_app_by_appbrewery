@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/bmi_calculator.png',
                 moduleNumber: 12,
                 appTitle: 'BMI Calculator',
-                cardBackgroundColor: Colors.blue,
+                cardBackgroundColor: Color(0xFF0A0D22),
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/BMI',
               ),
