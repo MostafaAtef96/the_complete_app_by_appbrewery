@@ -96,6 +96,15 @@ class HomeScreen extends StatelessWidget {
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Destini',
               ),
+              AppCard(
+                //Image was downloaded from pngtree.com
+                appIconPath: 'images/bmi_calculator.png',
+                moduleNumber: 12,
+                appTitle: 'BMI Calculator',
+                cardBackgroundColor: Colors.blue,
+                appTitleColor: Colors.white,
+                mainScreenRoute: '/BMI',
+              ),
             ],
           ),
         ),

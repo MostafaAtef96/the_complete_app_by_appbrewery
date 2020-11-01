@@ -47,7 +47,7 @@ class AppCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Module $moduleNumber App',
+                      'Module $moduleNumber',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,

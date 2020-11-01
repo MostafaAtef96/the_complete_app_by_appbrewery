@@ -8,6 +8,7 @@ import 'package:the_complete_app_by_appbrewery/magic_ball/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/xylophone/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/quizzler/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/destini/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/bmi_calculator//main_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/Xylophone': (context) => XylophoneMainScreen(),
         '/Quizzler': (context) => QuizzlerMainScreen(),
         '/Destini': (context) => DestiniMainScreen(),
+        '/BMI': (context) => BMIMainScreen(),
       },
     );
   }
