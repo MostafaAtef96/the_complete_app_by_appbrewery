@@ -4,6 +4,14 @@ import 'package:flutter/material.dart';
 import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
+  ResultsPage(
+      {@required this.result,
+      @required this.category,
+      @required this.interpretation});
+
+  final String result;
+  final String category;
+  final String interpretation;
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -38,15 +46,15 @@ class ResultsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      'TINY',
+                      category.toUpperCase(),
                       style: kResultTextStyle,
                     ),
                     Text(
-                      'NORMAL',
+                      result,
                       style: kBMITextStyle,
                     ),
                     Text(
-                      'OVER',
+                      interpretation,
                       textAlign: TextAlign.center,
                       style: kBodyTextStyle,
                     ),
