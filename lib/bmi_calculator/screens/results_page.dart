@@ -1,7 +1,7 @@
 import 'package:the_complete_app_by_appbrewery/bmi_calculator/constants.dart';
-import 'package:the_complete_app_by_appbrewery/bmi_calculator/reusable_card.dart';
+import 'package:the_complete_app_by_appbrewery/bmi_calculator/components/reusable_card.dart';
 import 'package:flutter/material.dart';
-import 'bottom_button.dart';
+import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
   @override
