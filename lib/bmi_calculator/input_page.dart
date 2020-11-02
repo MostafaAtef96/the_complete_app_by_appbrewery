@@ -3,9 +3,15 @@ import 'package:the_complete_app_by_appbrewery/bmi_calculator/reusable_card.dart
 import 'package:the_complete_app_by_appbrewery/bmi_calculator/icon_content.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+enum Gender {
+  male,
+  female,
+}
+
 const kBottomContainerHeight = 80.0;
 const kBottomContainerColor = Color(0xFFEB1555);
 const kActiveCardColor = Color(0xFF1D1E33);
+const kInactiveCardColor = Color(0xFF111328);
 
 class InputPage extends StatefulWidget {
   @override
@@ -13,6 +19,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  Gender selectedGender;
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -32,7 +39,14 @@ class _InputPageState extends State<InputPage> {
                   children: [
                     Expanded(
                       child: ReusableCard(
-                        cardColor: Color(0xFF1D1E33),
+                        onPress: () {
+                          setState(() {
+                            selectedGender = Gender.male;
+                          });
+                        },
+                        cardColor: selectedGender == Gender.male
+                            ? kActiveCardColor
+                            : kInactiveCardColor,
                         cardChild: IconContent(
                           iconDisplay: FontAwesomeIcons.mars,
                           iconText: 'MALE',
@@ -41,7 +55,14 @@ class _InputPageState extends State<InputPage> {
                     ),
                     Expanded(
                       child: ReusableCard(
-                        cardColor: Color(0xFF1D1E33),
+                        onPress: () {
+                          setState(() {
+                            selectedGender = Gender.female;
+                          });
+                        },
+                        cardColor: selectedGender == Gender.female
+                            ? kActiveCardColor
+                            : kInactiveCardColor,
                         cardChild: IconContent(
                           iconDisplay: FontAwesomeIcons.venus,
                           iconText: 'FEMALE',
