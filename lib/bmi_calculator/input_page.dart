@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+const kBottomContainerHeight = 80.0;
+const kBottomContainerColor = Color(0xFFEB1555);
+const kActiveCardColor = Color(0xFF1D1E33);
+
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -57,6 +61,12 @@ class _InputPageState extends State<InputPage> {
                   ],
                 ),
               ),
+              Container(
+                height: kBottomContainerHeight,
+                padding: EdgeInsets.only(bottom: 20.0),
+                color: kBottomContainerColor,
+                margin: EdgeInsets.only(top: 10.0),
+              ),
             ],
           ),
         ),
@@ -66,7 +76,7 @@ class _InputPageState extends State<InputPage> {
 }
 
 class ReusableCard extends StatelessWidget {
-  Color cardColor;
+  final Color cardColor;
   ReusableCard({@required this.cardColor});
   @override
   Widget build(BuildContext context) {
