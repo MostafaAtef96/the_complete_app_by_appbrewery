@@ -95,7 +95,7 @@ In this App, you will learn:
 
 ### What is Magic 8 Ball?
 
-**Magic 8 Ball** will solidify what you've learn't in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
+**Magic 8 Ball** will solidify what you've learnt in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
 
 We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.
 
@@ -136,7 +136,9 @@ In this App, you will learn:
 
 ### What is Quizzler?
 
-**Quizzler** is quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy! This module target is reviewing Stateful and Stateless Widgets as well as learning about the fundamental building blocks of Object Oriented Programming (OOP) - Classes and Objects.
+**Quizzler** is quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!
+
+This module target is reviewing Stateful and Stateless Widgets as well as learning about the fundamental building blocks of Object Oriented Programming (OOP) - Classes and Objects.
 
 ### Objectives
 
@@ -149,6 +151,20 @@ In this App, you will learn:
 * Private and public modifiers in Dart.
 * How to use Dart lists.
 * The difference between var, const and final.
+
+### Notes
+* App Icon was downloaded from pngtree.com
+* Demo Gif was downloaded from the course resources.
+
+## Destini
+
+<p align="center">
+<img src="ReadmeMedia/Destini.gif" width="500">
+</p>
+
+### What is Destini?
+
+**Destini**  is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.
 
 ### Notes
 * App Icon was downloaded from pngtree.com
