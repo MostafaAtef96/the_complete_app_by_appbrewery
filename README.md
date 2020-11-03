@@ -95,9 +95,11 @@ In this App, you will learn:
 
 ### What is Magic 8 Ball?
 
-**Magic 8 Ball** will solidify what you've learnt in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
+**Magic 8 Ball** is a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.
 
-We’re going to make a magical 8 ball app, it will give you the answers to all the tricky questions in life. You can make the ball change at the press of a button.
+the process of building this app will solidify what you've learnt in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
+
+We’re going to make 
 
 ### Notes
 * App Icon was downloaded from pngtree.com
@@ -164,7 +166,36 @@ In this App, you will learn:
 
 ### What is Destini?
 
-**Destini**  is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.
+**Destini** is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.
+
+### Notes
+* App Icon was downloaded from pngtree.com
+* Demo Gif was downloaded from the course resources.
+
+## BMI Calculator
+
+<p align="center">
+<img src="ReadmeMedia/BMICalculator.gif" width="500">
+</p>
+
+### What is BMI Calculator?
+
+**BMI Calculator** is a Body Mass Index Calculator inspired by the beautiful designs made by [Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator). It will be a multi screen app with simple functionality but full-on custom styling.
+
+The objective of this tutorial is to look at how we can customise Flutter Widgets to achieve our own beautiful user interface designs. If you have a designer on board, no matter how unconventional their designs are, we can create them using Flutter.
+
+### Objectives
+In this App, you will learn:
+* How to use Flutter themes to create coherent branding.
+* How to create multi-page apps using Flutter Routes and Navigator.
+* How to extract and refactor Flutter Widgets with a click of the button.
+* How to pass functions as parameters and fields.
+* How to use the GestureDetector Widget to detect more than just a tap.
+* How to use custom colour palettes by using hex codes.
+* How to customise Flutter Widgets to achieve a specific design style.
+* Understand Dart Enums and the Ternary Operator.
+* Learn about composition vs. inheritance and the Flutter way of creating custom UI.
+* Understand the difference between const and final in Dart and when to use each.
 
 ### Notes
 * App Icon was downloaded from pngtree.com
@@ -172,4 +203,5 @@ In this App, you will learn:
 
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.0.6
-* [AudioPlayers](https://pub.dev/packages/audioplayers) v0.16.1
+* [Audio Players](https://pub.dev/packages/audioplayers) v0.16.1
+* [Font Awesome Flutter](https://pub.dev/packages/font_awesome_flutter) v8.10.0
