@@ -202,6 +202,6 @@ In this App, you will learn:
 * Demo Gif was downloaded from the course resources.
 
 ## Packages
-* [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.0.6
-* [Audio Players](https://pub.dev/packages/audioplayers) v0.16.1
+* [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.1.0
+* [Audio Players](https://pub.dev/packages/audioplayers) v0.16.2
 * [Font Awesome Flutter](https://pub.dev/packages/font_awesome_flutter) v8.10.0
