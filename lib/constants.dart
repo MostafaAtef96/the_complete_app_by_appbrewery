@@ -17,6 +17,8 @@ Map<String, String> appDescription = {
       'Destini is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.',
   'BMI Calculator':
       'BMI Calculator is a Body Mass Index Calculator inspired by the beautiful designs made by Ruben Vaalt. It will be a multi screen app with simple functionality but full-on custom styling.',
+  'Clima':
+      'Clima app will help us learn about asynchronous programming in Dart. We\'ll look at how to carry out time consuming tasks such as getting device location and networking to get data from the internet.',
 };
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';

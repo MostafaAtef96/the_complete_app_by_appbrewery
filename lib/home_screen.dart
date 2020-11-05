@@ -110,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                 appIconPath: 'images/clima/ClimaIcon.png',
                 moduleNumber: 13,
                 appTitle: 'Clima',
-                cardBackgroundColor: Color(0xFF0A0D22),
+                cardBackgroundColor: Color(0xFF30302E),
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Clima',
               ),
