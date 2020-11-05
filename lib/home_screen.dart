@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
-                appIconPath: 'images/bmi_calculator.png',
+                appIconPath: 'images/clima/ClimaIcon.png',
                 moduleNumber: 13,
                 appTitle: 'Clima',
                 cardBackgroundColor: Color(0xFF0A0D22),
