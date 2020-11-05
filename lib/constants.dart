@@ -13,6 +13,10 @@ Map<String, String> appDescription = {
       'Xylophone is a music app that plays xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.',
   'Quizzler':
       'Quizzler is a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!',
+  'Destini':
+      'Destini is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.',
+  'BMI Calculator':
+      'BMI Calculator is a Body Mass Index Calculator inspired by the beautiful designs made by Ruben Vaalt. It will be a multi screen app with simple functionality but full-on custom styling.',
 };
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
