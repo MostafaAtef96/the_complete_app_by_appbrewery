@@ -205,3 +205,6 @@ In this App, you will learn:
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.1.0
 * [Audio Players](https://pub.dev/packages/audioplayers) v0.16.2
 * [Font Awesome Flutter](https://pub.dev/packages/font_awesome_flutter) v8.10.0
+* [Geolocator](https://pub.dev/packages/geolocator) v6.1.2
+* [HTTP](https://pub.dev/packages/http) v0.12.2
+* [Flutter Spinkit](https://pub.dev/packages/flutter_spinkit) v4.1.2
