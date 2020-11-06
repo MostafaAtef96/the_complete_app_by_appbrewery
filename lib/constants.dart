@@ -19,6 +19,8 @@ Map<String, String> appDescription = {
       'BMI Calculator is a Body Mass Index Calculator inspired by the beautiful designs made by Ruben Vaalt. It will be a multi screen app with simple functionality but full-on custom styling.',
   'Clima':
       'Clima is a weather app inspired by the beautiful designs made by Olia Gozha. By the end of the module, you\'ll be able to find out the live weather data in the current location of the device as well as the weather for any city you can think of!',
+  'Bitcoin Ticker':
+      'Bitcoin Ticker is a crypto currency price checking app. By the end of the module, you\'ll be able to monitor your bitcoin investents on the move!',
 };
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';

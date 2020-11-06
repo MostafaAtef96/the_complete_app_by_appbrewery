@@ -114,6 +114,15 @@ class HomeScreen extends StatelessWidget {
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/Clima',
               ),
+              AppCard(
+                //Image was downloaded from pngtree.com
+                appIconPath: 'images/BitcoinTicker.png',
+                moduleNumber: 14,
+                appTitle: 'Bitcoin Ticker',
+                cardBackgroundColor: Color(0xFF30302E),
+                appTitleColor: Colors.white,
+                mainScreenRoute: '/BitcoinTicker',
+              ),
             ],
           ),
         ),

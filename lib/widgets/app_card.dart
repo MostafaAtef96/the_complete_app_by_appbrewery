@@ -59,6 +59,7 @@ class AppCard extends StatelessWidget {
                     ),
                     Text(
                       appTitle,
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         color: appTitleColor,
                         fontSize: 30.0,
