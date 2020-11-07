@@ -11,10 +11,12 @@ class PriceScreen extends StatefulWidget {
 
 class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'USD';
+
   DropdownButton<String> androidDropdown() {
     List<DropdownMenuItem<String>> dropdownItems = [];
+
     for (String currency in currenciesList) {
-      var newItem = DropdownMenuItem(
+      DropdownMenuItem<String> newItem = DropdownMenuItem(
         child: Text(currency),
         value: currency,
       );
