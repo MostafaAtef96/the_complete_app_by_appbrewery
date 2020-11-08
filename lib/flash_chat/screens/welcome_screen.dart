@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/screens/login_screen.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/screens/registration_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  static const String flashChatWelcomeScreenID = 'FlashChatWelcomeScreen';
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
@@ -43,6 +46,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to login screen.
+                    Navigator.pushNamed(
+                        context, FlashChatLoginScreen.flashChatLoginScreenID);
                   },
                   minWidth: 200.0,
                   height: 42.0,
@@ -61,6 +66,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to registration screen.
+                    Navigator.pushNamed(
+                        context,
+                        FlashChatRegistrationScreen
+                            .flashChatRegistrationScreenID);
                   },
                   minWidth: 200.0,
                   height: 42.0,

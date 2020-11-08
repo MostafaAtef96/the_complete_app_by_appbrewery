@@ -6,6 +6,7 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 QuizBrain quizBrain = QuizBrain();
 
 class QuizzlerMainScreen extends StatelessWidget {
+  static const String quizzlerHomeScreenID = 'Quizzler';
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

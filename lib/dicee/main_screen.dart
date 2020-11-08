@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 
 class DiceeMainScreen extends StatelessWidget {
+  static const String diceeHomeScreenID = 'Dicee';
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

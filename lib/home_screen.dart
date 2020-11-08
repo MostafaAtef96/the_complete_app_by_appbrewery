@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
 import 'widgets/app_card.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
+import 'package:the_complete_app_by_appbrewery/i_am_rich/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/dicee/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/mi_card/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/I_am_poor/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/magic_ball/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/xylophone/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/quizzler/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/destini/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/bmi_calculator/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/clima/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/bitcoin_ticker/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/main_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String screenID = 'HomeScreen';
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -32,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'I Am Rich',
                 cardBackgroundColor: Colors.blueGrey[900],
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/IAmRich',
+                mainScreenRoute: IAmRichMainScreen.iAmRichHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngwing.com
@@ -41,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'I Am Poor',
                 cardBackgroundColor: Colors.teal[900],
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/IAmPoor',
+                mainScreenRoute: IAmPoorMainScreen.iAmPoorHomeScreenID,
               ),
               AppCard(
                 appIconPath: 'images/BusinessCard.png',
@@ -49,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'MiCard',
                 cardBackgroundColor: Colors.teal[900],
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/MiCard',
+                mainScreenRoute: MiCardMainScreen.miCardHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -58,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Dicee',
                 cardBackgroundColor: Colors.red,
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/Dicee',
+                mainScreenRoute: DiceeMainScreen.diceeHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from  pngtree.com
@@ -67,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Magic Ball',
                 cardBackgroundColor: Colors.blue[900],
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/MagicBall',
+                mainScreenRoute: MagicBallMainScreen.magicBallHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -76,7 +89,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Xylophone',
                 cardBackgroundColor: Colors.green[900],
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/Xylophone',
+                mainScreenRoute: XylophoneMainScreen.xylophoneHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -85,7 +98,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Quizzler',
                 cardBackgroundColor: Colors.grey.shade900,
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/Quizzler',
+                mainScreenRoute: QuizzlerMainScreen.quizzlerHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -94,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Destini',
                 cardBackgroundColor: Colors.blue,
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/Destini',
+                mainScreenRoute: DestiniMainScreen.destiniHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -103,7 +116,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'BMI Calculator',
                 cardBackgroundColor: Color(0xFF0A0D22),
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/BMI',
+                mainScreenRoute: BMIMainScreen.bmiHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -112,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Clima',
                 cardBackgroundColor: Color(0xFF30302E),
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/Clima',
+                mainScreenRoute: ClimaMainScreen.climaHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -121,7 +134,8 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Bitcoin Ticker',
                 cardBackgroundColor: Colors.lightBlue,
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/BitcoinTicker',
+                mainScreenRoute:
+                    BitcoinTickerMainScreen.bitcoinTickerHomeScreenID,
               ),
               AppCard(
                 //Image was downloaded from pngtree.com
@@ -130,7 +144,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Flash Chat',
                 cardBackgroundColor: Colors.lightBlue,
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/FlashChat',
+                mainScreenRoute: FlashChatMainScreen.flashChatHomeScreenID,
               ),
             ],
           ),

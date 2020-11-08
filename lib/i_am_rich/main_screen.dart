@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 
 class IAmRichMainScreen extends StatelessWidget {
+  static const String iAmRichHomeScreenID = 'IAmRich';
+
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

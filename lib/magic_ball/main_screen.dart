@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:the_complete_app_by_appbrewery/main.dart';
 
 class MagicBallMainScreen extends StatelessWidget {
+  static const String magicBallHomeScreenID = 'MagicBall';
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

@@ -12,6 +12,8 @@ import 'package:the_complete_app_by_appbrewery/bmi_calculator/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/clima/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/bitcoin_ticker/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/screens/login_screen.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/screens/registration_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,22 +24,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //Return the main screen of the Full App.
     return MaterialApp(
-//      theme: ThemeData.dark(),
-      initialRoute: '/',
+      initialRoute: HomeScreen.screenID,
       routes: {
-        '/': (context) => HomeScreen(),
-        '/IAmRich': (context) => IAmRichMainScreen(),
-        '/IAmPoor': (context) => IAmPoorMainScreen(),
-        '/MiCard': (context) => MiCardMainScreen(),
-        '/Dicee': (context) => DiceeMainScreen(),
-        '/MagicBall': (context) => MagicBallMainScreen(),
-        '/Xylophone': (context) => XylophoneMainScreen(),
-        '/Quizzler': (context) => QuizzlerMainScreen(),
-        '/Destini': (context) => DestiniMainScreen(),
-        '/BMI': (context) => BMIMainScreen(),
-        '/Clima': (context) => ClimaMainScreen(),
-        '/BitcoinTicker': (context) => BitcoinTickerMainScreen(),
-        '/FlashChat': (context) => FlashChatMainScreen(),
+        HomeScreen.screenID: (context) => HomeScreen(),
+        IAmRichMainScreen.iAmRichHomeScreenID: (context) => IAmRichMainScreen(),
+        IAmPoorMainScreen.iAmPoorHomeScreenID: (context) => IAmPoorMainScreen(),
+        MiCardMainScreen.miCardHomeScreenID: (context) => MiCardMainScreen(),
+        DiceeMainScreen.diceeHomeScreenID: (context) => DiceeMainScreen(),
+        MagicBallMainScreen.magicBallHomeScreenID: (context) =>
+            MagicBallMainScreen(),
+        XylophoneMainScreen.xylophoneHomeScreenID: (context) =>
+            XylophoneMainScreen(),
+        QuizzlerMainScreen.quizzlerHomeScreenID: (context) =>
+            QuizzlerMainScreen(),
+        DestiniMainScreen.destiniHomeScreenID: (context) => DestiniMainScreen(),
+        BMIMainScreen.bmiHomeScreenID: (context) => BMIMainScreen(),
+        ClimaMainScreen.climaHomeScreenID: (context) => ClimaMainScreen(),
+        BitcoinTickerMainScreen.bitcoinTickerHomeScreenID: (context) =>
+            BitcoinTickerMainScreen(),
+        FlashChatMainScreen.flashChatHomeScreenID: (context) =>
+            FlashChatMainScreen(),
+        FlashChatLoginScreen.flashChatLoginScreenID: (context) =>
+            FlashChatLoginScreen(),
+        FlashChatRegistrationScreen.flashChatRegistrationScreenID: (context) =>
+            FlashChatRegistrationScreen(),
       },
     );
   }

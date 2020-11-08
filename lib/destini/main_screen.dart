@@ -3,6 +3,7 @@ import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 import 'package:the_complete_app_by_appbrewery/destini/story_brain.dart';
 
 class DestiniMainScreen extends StatelessWidget {
+  static const String destiniHomeScreenID = 'Destini';
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

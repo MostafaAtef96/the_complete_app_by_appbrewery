@@ -3,6 +3,7 @@ import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 import 'package:the_complete_app_by_appbrewery/bitcoin_ticker/price_Screen.dart';
 
 class BitcoinTickerMainScreen extends StatelessWidget {
+  static const String bitcoinTickerHomeScreenID = 'BitcoinTicker';
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

@@ -3,6 +3,7 @@ import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
 import 'package:audioplayers/audio_cache.dart';
 
 class XylophoneMainScreen extends StatelessWidget {
+  static const String xylophoneHomeScreenID = 'Xylophone';
   @override
   Widget build(BuildContext context) {
     return AppMainWidget(

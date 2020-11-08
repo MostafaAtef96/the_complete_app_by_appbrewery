@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
-class RegistrationScreen extends StatefulWidget {
+class FlashChatRegistrationScreen extends StatefulWidget {
+  static const String flashChatRegistrationScreenID =
+      'FlashChatRegistrationScreen';
   @override
-  _RegistrationScreenState createState() => _RegistrationScreenState();
+  _FlashChatRegistrationScreenState createState() =>
+      _FlashChatRegistrationScreenState();
 }
 
-class _RegistrationScreenState extends State<RegistrationScreen> {
+class _FlashChatRegistrationScreenState
+    extends State<FlashChatRegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +22,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           children: <Widget>[
             Container(
               height: 200.0,
-              child: Image.asset('images/logo.png'),
+              child: Image.asset('images/FlashChatLogo.png'),
             ),
             SizedBox(
               height: 48.0,
