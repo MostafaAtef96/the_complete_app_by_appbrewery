@@ -130,7 +130,7 @@ class HomeScreen extends StatelessWidget {
                 appTitle: 'Flash Chat',
                 cardBackgroundColor: Colors.lightBlue,
                 appTitleColor: Colors.white,
-                mainScreenRoute: '/BitcoinTicker',
+                mainScreenRoute: '/FlashChat',
               ),
             ],
           ),

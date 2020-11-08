@@ -11,6 +11,7 @@ import 'package:the_complete_app_by_appbrewery/destini/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/bmi_calculator/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/clima/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/bitcoin_ticker/main_screen.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/main_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/BMI': (context) => BMIMainScreen(),
         '/Clima': (context) => ClimaMainScreen(),
         '/BitcoinTicker': (context) => BitcoinTickerMainScreen(),
+        '/FlashChat': (context) => FlashChatMainScreen(),
       },
     );
   }
