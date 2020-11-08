@@ -123,6 +123,15 @@ class HomeScreen extends StatelessWidget {
                 appTitleColor: Colors.white,
                 mainScreenRoute: '/BitcoinTicker',
               ),
+              AppCard(
+                //Image was downloaded from pngtree.com
+                appIconPath: 'images/FlashChat.png',
+                moduleNumber: 15,
+                appTitle: 'Flash Chat',
+                cardBackgroundColor: Colors.lightBlue,
+                appTitleColor: Colors.white,
+                mainScreenRoute: '/BitcoinTicker',
+              ),
             ],
           ),
         ),
