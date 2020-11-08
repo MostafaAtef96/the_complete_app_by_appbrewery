@@ -1,8 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:the_complete_app_by_appbrewery/config.dart';
-
-const coinAPIURL = 'https://rest.coinapi.io/v1/exchangerate';
+import 'package:the_complete_app_by_appbrewery/constants.dart';
 
 const List<String> currenciesList = [
   'AUD',

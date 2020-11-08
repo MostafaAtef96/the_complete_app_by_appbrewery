@@ -24,3 +24,4 @@ Map<String, String> appDescription = {
 };
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
+const coinAPIURL = 'https://rest.coinapi.io/v1/exchangerate';
