@@ -17,9 +17,12 @@ class _FlashChatLoginScreenState extends State<FlashChatLoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              height: 200.0,
-              child: Image.asset('images/FlashChatLogo.png'),
+            Hero(
+              tag: 'flashChatLogo',
+              child: Container(
+                height: 200.0,
+                child: Image.asset('images/FlashChatLogo.png'),
+              ),
             ),
             SizedBox(
               height: 48.0,
