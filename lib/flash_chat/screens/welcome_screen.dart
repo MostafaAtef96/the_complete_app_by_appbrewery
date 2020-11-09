@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/screens/login_screen.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/screens/registration_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/components/rounded_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String flashChatWelcomeScreenID = 'FlashChatWelcomeScreen';
@@ -65,47 +66,23 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             SizedBox(
               height: 48.0,
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                elevation: 5.0,
-                color: Colors.lightBlueAccent,
-                borderRadius: BorderRadius.circular(30.0),
-                child: MaterialButton(
-                  onPressed: () {
-                    //Go to login screen.
-                    Navigator.pushNamed(
-                        context, FlashChatLoginScreen.flashChatLoginScreenID);
-                  },
-                  minWidth: 200.0,
-                  height: 42.0,
-                  child: Text(
-                    'Log In',
-                  ),
-                ),
-              ),
+            RoundedButton(
+              buttonTitle: 'Log In',
+              buttonColor: Colors.lightBlueAccent,
+              onPressed: () {
+                //Go to login screen.
+                Navigator.pushNamed(
+                    context, FlashChatLoginScreen.flashChatLoginScreenID);
+              },
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(30.0),
-                elevation: 5.0,
-                child: MaterialButton(
-                  onPressed: () {
-                    //Go to registration screen.
-                    Navigator.pushNamed(
-                        context,
-                        FlashChatRegistrationScreen
-                            .flashChatRegistrationScreenID);
-                  },
-                  minWidth: 200.0,
-                  height: 42.0,
-                  child: Text(
-                    'Register',
-                  ),
-                ),
-              ),
+            RoundedButton(
+              buttonTitle: 'Register',
+              buttonColor: Colors.blueAccent,
+              onPressed: () {
+                //Go to registration screen.
+                Navigator.pushNamed(context,
+                    FlashChatRegistrationScreen.flashChatRegistrationScreenID);
+              },
             ),
           ],
         ),

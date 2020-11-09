@@ -8,19 +8,7 @@ class FlashChatMainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppMainWidget(
       appTitle: 'Flash Chat',
-      appWidgetTree: Theme(
-        data: ThemeData.dark().copyWith(
-            primaryColor: Colors.lightBlue,
-            scaffoldBackgroundColor: Colors.white),
-        child: Theme(
-          data: ThemeData.dark().copyWith(
-            textTheme: TextTheme(
-              bodyText2: TextStyle(color: Colors.black54),
-            ),
-          ),
-          child: WelcomeScreen(),
-        ),
-      ),
+      appWidgetTree: WelcomeScreen(),
     );
   }
 }
