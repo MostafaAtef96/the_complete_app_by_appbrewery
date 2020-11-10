@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/components/rounded_button.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/constants.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:the_complete_app_by_appbrewery/flash_chat/screens/chat_screen.dart';
 
 class FlashChatRegistrationScreen extends StatefulWidget {
   static const String flashChatRegistrationScreenID =
@@ -12,6 +16,11 @@ class FlashChatRegistrationScreen extends StatefulWidget {
 
 class _FlashChatRegistrationScreenState
     extends State<FlashChatRegistrationScreen> {
+  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+  String email = "";
+  String password = "";
+  final _auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,8 +42,10 @@ class _FlashChatRegistrationScreenState
               height: 48.0,
             ),
             TextField(
+              textAlign: TextAlign.center,
+              keyboardType: TextInputType.emailAddress,
               onChanged: (value) {
-                //Do something with the user input.
+                email = value;
               },
               decoration:
                   kTextFieldDecoration.copyWith(hintText: 'Enter your email'),
@@ -43,25 +54,13 @@ class _FlashChatRegistrationScreenState
               height: 8.0,
             ),
             TextField(
+              textAlign: TextAlign.center,
+              obscureText: true,
               onChanged: (value) {
-                //Do something with the user input.
+                password = value;
               },
-              decoration: InputDecoration(
-                hintText: 'Enter your password',
-                contentPadding:
-                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-              ),
+              decoration: kTextFieldDecoration.copyWith(
+                  hintText: 'Enter your password.'),
             ),
             SizedBox(
               height: 24.0,
@@ -69,7 +68,19 @@ class _FlashChatRegistrationScreenState
             RoundedButton(
               buttonTitle: 'Register',
               buttonColor: Colors.blueAccent,
-              onPressed: () {},
+              onPressed: () async {
+                try {
+                  final newUser = await _auth.createUserWithEmailAndPassword(
+                      email: email, password: password);
+                  if (newUser != null) {
+                    print(newUser);
+                    Navigator.pushNamed(
+                        context, FlashChatChatScreen.flashChatChatScreenID);
+                  }
+                } catch (e) {
+                  print(e);
+                }
+              },
             ),
           ],
         ),

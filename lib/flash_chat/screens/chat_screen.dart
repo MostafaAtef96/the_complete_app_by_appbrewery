@@ -1,13 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/constants.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class ChatScreen extends StatefulWidget {
+final _auth = FirebaseAuth.instance;
+User loggedInUser;
+
+class FlashChatChatScreen extends StatefulWidget {
   static const String flashChatChatScreenID = 'FlashChatChatScreen';
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  _FlashChatChatScreenState createState() => _FlashChatChatScreenState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _FlashChatChatScreenState extends State<FlashChatChatScreen> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    getCurrentUser();
+  }
+
+  void getCurrentUser() {
+    try {
+      final User user = _auth.currentUser;
+      if (user != null) {
+        loggedInUser = user;
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +38,8 @@ class _ChatScreenState extends State<ChatScreen> {
           IconButton(
               icon: Icon(Icons.close),
               onPressed: () {
-                //Implement logout functionality
+                _auth.signOut();
+                Navigator.pop(context);
               }),
         ],
         title: Text('⚡️Chat'),
