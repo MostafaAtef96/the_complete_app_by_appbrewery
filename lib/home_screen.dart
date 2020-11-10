@@ -16,6 +16,83 @@ import 'package:the_complete_app_by_appbrewery/flash_chat/main_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String screenID = 'HomeScreen';
+
+  AppCard createAppCard(String icon, int module, String title,
+      Color backgroundColor, Color titleColor, String mainRoute) {
+    return AppCard(
+      appIconPath: icon,
+      moduleNumber: module,
+      appTitle: title,
+      cardBackgroundColor: backgroundColor,
+      appTitleColor: titleColor,
+      mainScreenRoute: mainRoute,
+    );
+  }
+
+  List<AppCard> generateCards() {
+    List<AppCard> appCards = [];
+    appCards.add(createAppCard(
+        'images/diamond.png',
+        3,
+        'I Am Rich',
+        Colors.blueGrey[900],
+        Colors.white,
+        IAmRichMainScreen.iAmRichHomeScreenID));
+    appCards.add(createAppCard('images/poor.png', 5, 'I Am Poor',
+        Colors.teal[900], Colors.white, IAmPoorMainScreen.iAmPoorHomeScreenID));
+    appCards.add(createAppCard('images/BusinessCard.png', 6, 'MiCard',
+        Colors.teal[900], Colors.white, MiCardMainScreen.miCardHomeScreenID));
+    appCards.add(createAppCard('images/dicee/diceeIcon.png', 7, 'Dicee',
+        Colors.red, Colors.white, DiceeMainScreen.diceeHomeScreenID));
+    appCards.add(createAppCard(
+        'images/magic_ball/MagicBallIcon.png',
+        8,
+        'Magic Ball',
+        Colors.blue[900],
+        Colors.white,
+        MagicBallMainScreen.magicBallHomeScreenID));
+    appCards.add(createAppCard(
+        'images/xylophone.png',
+        9,
+        'Xylophone',
+        Colors.green[900],
+        Colors.white,
+        XylophoneMainScreen.xylophoneHomeScreenID));
+    appCards.add(createAppCard(
+        'images/quizzler.png',
+        10,
+        'Quizzler',
+        Colors.grey.shade900,
+        Colors.white,
+        QuizzlerMainScreen.quizzlerHomeScreenID));
+    appCards.add(createAppCard('images/destini.png', 11, 'Destini', Colors.blue,
+        Colors.white, DestiniMainScreen.destiniHomeScreenID));
+    appCards.add(createAppCard(
+        'images/bmi_calculator.png',
+        12,
+        'BMI Calculator',
+        Color(0xFF0A0D22),
+        Colors.white,
+        BMIMainScreen.bmiHomeScreenID));
+    appCards.add(createAppCard('images/clima/ClimaIcon.png', 13, 'Clima',
+        Color(0xFF30302E), Colors.white, ClimaMainScreen.climaHomeScreenID));
+    appCards.add(createAppCard(
+        'images/BitcoinTicker.png',
+        14,
+        'Bitcoin Ticker',
+        Colors.lightBlue,
+        Colors.white,
+        BitcoinTickerMainScreen.bitcoinTickerHomeScreenID));
+    appCards.add(createAppCard(
+        'images/FlashChat.png',
+        15,
+        'Flash Chat',
+        Colors.lightBlue,
+        Colors.white,
+        FlashChatMainScreen.flashChatHomeScreenID));
+    return appCards;
+  }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -37,116 +114,7 @@ class HomeScreen extends StatelessWidget {
         ),
         body: Container(
           child: ListView(
-            children: [
-              //This is going to be the application card containing an Image, and the name of the app
-              AppCard(
-                appIconPath: 'images/diamond.png',
-                moduleNumber: 3,
-                appTitle: 'I Am Rich',
-                cardBackgroundColor: Colors.blueGrey[900],
-                appTitleColor: Colors.white,
-                mainScreenRoute: IAmRichMainScreen.iAmRichHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngwing.com
-                appIconPath: 'images/poor.png',
-                moduleNumber: 5,
-                appTitle: 'I Am Poor',
-                cardBackgroundColor: Colors.teal[900],
-                appTitleColor: Colors.white,
-                mainScreenRoute: IAmPoorMainScreen.iAmPoorHomeScreenID,
-              ),
-              AppCard(
-                appIconPath: 'images/BusinessCard.png',
-                moduleNumber: 6,
-                appTitle: 'MiCard',
-                cardBackgroundColor: Colors.teal[900],
-                appTitleColor: Colors.white,
-                mainScreenRoute: MiCardMainScreen.miCardHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/dicee/diceeIcon.png',
-                moduleNumber: 7,
-                appTitle: 'Dicee',
-                cardBackgroundColor: Colors.red,
-                appTitleColor: Colors.white,
-                mainScreenRoute: DiceeMainScreen.diceeHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from  pngtree.com
-                appIconPath: 'images/magic_ball/MagicBallIcon.png',
-                moduleNumber: 8,
-                appTitle: 'Magic Ball',
-                cardBackgroundColor: Colors.blue[900],
-                appTitleColor: Colors.white,
-                mainScreenRoute: MagicBallMainScreen.magicBallHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/xylophone.png',
-                moduleNumber: 9,
-                appTitle: 'Xylophone',
-                cardBackgroundColor: Colors.green[900],
-                appTitleColor: Colors.white,
-                mainScreenRoute: XylophoneMainScreen.xylophoneHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/quizzler.png',
-                moduleNumber: 10,
-                appTitle: 'Quizzler',
-                cardBackgroundColor: Colors.grey.shade900,
-                appTitleColor: Colors.white,
-                mainScreenRoute: QuizzlerMainScreen.quizzlerHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/destini.png',
-                moduleNumber: 11,
-                appTitle: 'Destini',
-                cardBackgroundColor: Colors.blue,
-                appTitleColor: Colors.white,
-                mainScreenRoute: DestiniMainScreen.destiniHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/bmi_calculator.png',
-                moduleNumber: 12,
-                appTitle: 'BMI Calculator',
-                cardBackgroundColor: Color(0xFF0A0D22),
-                appTitleColor: Colors.white,
-                mainScreenRoute: BMIMainScreen.bmiHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/clima/ClimaIcon.png',
-                moduleNumber: 13,
-                appTitle: 'Clima',
-                cardBackgroundColor: Color(0xFF30302E),
-                appTitleColor: Colors.white,
-                mainScreenRoute: ClimaMainScreen.climaHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/BitcoinTicker.png',
-                moduleNumber: 14,
-                appTitle: 'Bitcoin Ticker',
-                cardBackgroundColor: Colors.lightBlue,
-                appTitleColor: Colors.white,
-                mainScreenRoute:
-                    BitcoinTickerMainScreen.bitcoinTickerHomeScreenID,
-              ),
-              AppCard(
-                //Image was downloaded from pngtree.com
-                appIconPath: 'images/FlashChat.png',
-                moduleNumber: 15,
-                appTitle: 'Flash Chat',
-                cardBackgroundColor: Colors.lightBlue,
-                appTitleColor: Colors.white,
-                mainScreenRoute: FlashChatMainScreen.flashChatHomeScreenID,
-              ),
-            ],
+            children: generateCards(),
           ),
         ),
       ),
