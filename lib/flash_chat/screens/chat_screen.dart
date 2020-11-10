@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/flash_chat/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 final _auth = FirebaseAuth.instance;
 User loggedInUser;
+final _firestore = FirebaseFirestore.instance;
 
 class FlashChatChatScreen extends StatefulWidget {
   static const String flashChatChatScreenID = 'FlashChatChatScreen';
@@ -12,6 +14,7 @@ class FlashChatChatScreen extends StatefulWidget {
 }
 
 class _FlashChatChatScreenState extends State<FlashChatChatScreen> {
+  String messageText;
   @override
   void initState() {
     // TODO: implement initState
@@ -58,14 +61,19 @@ class _FlashChatChatScreenState extends State<FlashChatChatScreen> {
                   Expanded(
                     child: TextField(
                       onChanged: (value) {
-                        //Do something with the user input.
+                        messageText = value;
                       },
                       decoration: kMessageTextFieldDecoration,
                     ),
                   ),
                   FlatButton(
                     onPressed: () {
-                      //Implement send functionality.
+                      _firestore.collection('messages').add(
+                        {
+                          'text': messageText,
+                          'sender': loggedInUser.email,
+                        },
+                      );
                     },
                     child: Text(
                       'Send',
