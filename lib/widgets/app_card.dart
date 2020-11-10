@@ -10,7 +10,6 @@ class AppCard extends StatelessWidget {
     this.moduleNumber,
     this.appTitle,
     this.cardBackgroundColor,
-    this.appTitleColor,
     this.mainScreenRoute,
   });
 
@@ -18,7 +17,6 @@ class AppCard extends StatelessWidget {
   final int moduleNumber;
   final String appTitle;
   final Color cardBackgroundColor;
-  final Color appTitleColor;
   final String mainScreenRoute;
 
   @override
@@ -61,7 +59,7 @@ class AppCard extends StatelessWidget {
                       appTitle,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        color: appTitleColor,
+                        color: Colors.white,
                         fontSize: 30.0,
                         fontWeight: FontWeight.bold,
                       ),

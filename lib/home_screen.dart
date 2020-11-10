@@ -18,78 +18,46 @@ class HomeScreen extends StatelessWidget {
   static const String screenID = 'HomeScreen';
 
   AppCard createAppCard(String icon, int module, String title,
-      Color backgroundColor, Color titleColor, String mainRoute) {
+      Color backgroundColor, String mainRoute) {
     return AppCard(
       appIconPath: icon,
       moduleNumber: module,
       appTitle: title,
       cardBackgroundColor: backgroundColor,
-      appTitleColor: titleColor,
       mainScreenRoute: mainRoute,
     );
   }
 
   List<AppCard> generateCards() {
     List<AppCard> appCards = [];
-    appCards.add(createAppCard(
-        'images/diamond.png',
-        3,
-        'I Am Rich',
-        Colors.blueGrey[900],
-        Colors.white,
-        IAmRichMainScreen.iAmRichHomeScreenID));
+    appCards.add(createAppCard('images/diamond.png', 3, 'I Am Rich',
+        Colors.blueGrey[900], IAmRichMainScreen.iAmRichHomeScreenID));
     appCards.add(createAppCard('images/poor.png', 5, 'I Am Poor',
-        Colors.teal[900], Colors.white, IAmPoorMainScreen.iAmPoorHomeScreenID));
+        Colors.teal[900], IAmPoorMainScreen.iAmPoorHomeScreenID));
     appCards.add(createAppCard('images/BusinessCard.png', 6, 'MiCard',
-        Colors.teal[900], Colors.white, MiCardMainScreen.miCardHomeScreenID));
+        Colors.teal[900], MiCardMainScreen.miCardHomeScreenID));
     appCards.add(createAppCard('images/dicee/diceeIcon.png', 7, 'Dicee',
-        Colors.red, Colors.white, DiceeMainScreen.diceeHomeScreenID));
+        Colors.red, DiceeMainScreen.diceeHomeScreenID));
     appCards.add(createAppCard(
         'images/magic_ball/MagicBallIcon.png',
         8,
         'Magic Ball',
         Colors.blue[900],
-        Colors.white,
         MagicBallMainScreen.magicBallHomeScreenID));
-    appCards.add(createAppCard(
-        'images/xylophone.png',
-        9,
-        'Xylophone',
-        Colors.green[900],
-        Colors.white,
-        XylophoneMainScreen.xylophoneHomeScreenID));
-    appCards.add(createAppCard(
-        'images/quizzler.png',
-        10,
-        'Quizzler',
-        Colors.grey.shade900,
-        Colors.white,
-        QuizzlerMainScreen.quizzlerHomeScreenID));
+    appCards.add(createAppCard('images/xylophone.png', 9, 'Xylophone',
+        Colors.green[900], XylophoneMainScreen.xylophoneHomeScreenID));
+    appCards.add(createAppCard('images/quizzler.png', 10, 'Quizzler',
+        Colors.grey.shade900, QuizzlerMainScreen.quizzlerHomeScreenID));
     appCards.add(createAppCard('images/destini.png', 11, 'Destini', Colors.blue,
-        Colors.white, DestiniMainScreen.destiniHomeScreenID));
-    appCards.add(createAppCard(
-        'images/bmi_calculator.png',
-        12,
-        'BMI Calculator',
-        Color(0xFF0A0D22),
-        Colors.white,
-        BMIMainScreen.bmiHomeScreenID));
+        DestiniMainScreen.destiniHomeScreenID));
+    appCards.add(createAppCard('images/bmi_calculator.png', 12,
+        'BMI Calculator', Color(0xFF0A0D22), BMIMainScreen.bmiHomeScreenID));
     appCards.add(createAppCard('images/clima/ClimaIcon.png', 13, 'Clima',
-        Color(0xFF30302E), Colors.white, ClimaMainScreen.climaHomeScreenID));
-    appCards.add(createAppCard(
-        'images/BitcoinTicker.png',
-        14,
-        'Bitcoin Ticker',
-        Colors.lightBlue,
-        Colors.white,
-        BitcoinTickerMainScreen.bitcoinTickerHomeScreenID));
-    appCards.add(createAppCard(
-        'images/FlashChat.png',
-        15,
-        'Flash Chat',
-        Colors.lightBlue,
-        Colors.white,
-        FlashChatMainScreen.flashChatHomeScreenID));
+        Color(0xFF30302E), ClimaMainScreen.climaHomeScreenID));
+    appCards.add(createAppCard('images/BitcoinTicker.png', 14, 'Bitcoin Ticker',
+        Colors.lightBlue, BitcoinTickerMainScreen.bitcoinTickerHomeScreenID));
+    appCards.add(createAppCard('images/FlashChat.png', 15, 'Flash Chat',
+        Colors.lightBlue, FlashChatMainScreen.flashChatHomeScreenID));
     return appCards;
   }
 
