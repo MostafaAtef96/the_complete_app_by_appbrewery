@@ -21,6 +21,8 @@ Map<String, String> appDescription = {
       'Clima is a weather app inspired by the beautiful designs made by Olia Gozha. By the end of the module, you\'ll be able to find out the live weather data in the current location of the device as well as the weather for any city you can think of!',
   'Bitcoin Ticker':
       'Bitcoin Ticker is a crypto currency price checking app. By the end of the module, you\'ll be able to monitor your bitcoin investents on the move!',
+  'Flash Chat':
+      'Flash Chat is a modern messaging app where users can sign up and log in to chat.',
 };
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
