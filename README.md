@@ -232,6 +232,32 @@ In this App, you will learn:
 * App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
 
+## Bitcoin Ticker
+
+<p align="center">
+<img src="ReadmeMedia/BitcoinTicker.gif" width="500">
+</p>
+
+### What is Bitcoin Ticker?
+
+**Bitcoin Ticker** is a crypto currency price checking app. By the end of the module, you\'ll be able to monitor your bitcoin investents on the move!
+
+The objective of this tutorial is to learn about using Cupertino and Material Widgets in parallel and providing a different user interface depending on the platform.
+
+
+### Objectives
+In this App, you will learn:
+* How to use the DropdownButton Widget from Material design.
+* How to loop through code using Dart for and for-in loops.
+* How to use Cupertino Widgets in your app.
+* How to check the platform your app is being run on to customise the UI for that platform.
+* Revise previous concepts by completing the challenges.
+
+### Notes
+* App Icon was downloaded from pngtree.com
+* Demo Gif was downloaded from the course resources.
+* To use the app an API Key from [Coin API](https://www.coinapi.io/) must be added to config.dart file.
+
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.1.0
 * [Audio Players](https://pub.dev/packages/audioplayers) v0.16.2
