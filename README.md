@@ -265,3 +265,8 @@ In this App, you will learn:
 * [Geolocator](https://pub.dev/packages/geolocator) v6.1.2
 * [HTTP](https://pub.dev/packages/http) v0.12.2
 * [Flutter Spinkit](https://pub.dev/packages/flutter_spinkit) v4.1.2
+* [Animated Text Kit](https://pub.dev/packages/animated_text_kit) v^2.5.4
+* [Firebase Core](https://pub.dev/packages/firebase_core) v^0.5.2
+* [Firebase Auth](https://pub.dev/packages/firebase_auth) v^0.18.3
+* [Cloud Firestore](https://pub.dev/packages/cloud_firestore) v^0.14.3
+* [Modal Progress Hud](https://pub.dev/packages/modal_progress_hud) v^0.1.3
