@@ -213,7 +213,6 @@ In this App, you will learn:
 
 The objective of this tutorial is to learn about asynchronous programming in Dart. We'll look at how to carry out time consuming tasks such as getting device location and networking to get data from the internet.
 
-
 ### Objectives
 In this App, you will learn:
 * How to use Dart to perform asynchronous tasks.
@@ -231,6 +230,7 @@ In this App, you will learn:
 ### Notes
 * App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
+* To use the app an API Key from [Open Weather Map](https://openweathermap.org/) must be added to config.dart file.
 
 ## Bitcoin Ticker
 
@@ -244,7 +244,6 @@ In this App, you will learn:
 
 The objective of this tutorial is to learn about using Cupertino and Material Widgets in parallel and providing a different user interface depending on the platform.
 
-
 ### Objectives
 In this App, you will learn:
 * How to use the DropdownButton Widget from Material design.
@@ -256,7 +255,35 @@ In this App, you will learn:
 ### Notes
 * App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
-* To use the app an API Key from [Coin API](https://www.coinapi.io/) must be added to config.dart file.
+* To use the app an API Key from [Coin API](https://www.coinapi.io) must be added to config.dart file.
+
+## Flash Chat
+
+<p align="center">
+<img src="ReadmeMedia/FlashChat.gif" width="500">
+</p>
+
+### What is Flash Chat?
+
+**Flash Chat** is a modern messaging app where users can sign up and log in to chat.
+
+The objective of this tutorial is to learn how to incorporate Firebase into our Flutter apps. We'll be using Firebase Cloud Firestore as well as the Firebase authentication package to equip our app with a cloud-based NoSQL database and secure authentication methods.
+
+### Objectives
+In this App, you will learn:
+* How to incorporate Firebase into your Flutter projects.
+* How to use Firebase authentication to register and sign in users.
+* How to create beautiful animations using the Flutter Hero widget.
+* How to create custom aniamtions using Flutter's animation controller.
+* All about mixins and how they differ from superclasses.
+* About Streams and how they work.
+* To use ListViews to build scrolling views.
+* How to use Firebase Cloud Firestore to store and retrieve data on the fly.
+
+### Notes
+* App Icon was downloaded from pngtree.com
+* Demo Gif was downloaded from the course resources.
+* To use the app you must set up a project on [Firebase](https://console.firebase.google.com/) and provide an API key in the config.dart file.
 
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.1.0
