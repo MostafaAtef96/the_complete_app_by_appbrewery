@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_complete_app_by_appbrewery/todoey/main_screen.dart';
 import 'widgets/app_card.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/exit_app_alert_box.dart';
 import 'package:the_complete_app_by_appbrewery/i_am_rich/main_screen.dart';
@@ -59,7 +60,7 @@ class HomeScreen extends StatelessWidget {
     appCards.add(createAppCard('images/FlashChat.png', 15, 'Flash Chat',
         Colors.lightBlue, FlashChatMainScreen.flashChatHomeScreenID));
     appCards.add(createAppCard('images/Todoey.png', 16, 'Todoey',
-        Colors.lightBlue, FlashChatMainScreen.flashChatHomeScreenID));
+        Colors.lightBlue, TodoeyMainScreen.todoeyHomeScreenID));
     return appCards;
   }
 
