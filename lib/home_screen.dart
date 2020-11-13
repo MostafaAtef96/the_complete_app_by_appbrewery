@@ -58,6 +58,8 @@ class HomeScreen extends StatelessWidget {
         Colors.lightBlue, BitcoinTickerMainScreen.bitcoinTickerHomeScreenID));
     appCards.add(createAppCard('images/FlashChat.png', 15, 'Flash Chat',
         Colors.lightBlue, FlashChatMainScreen.flashChatHomeScreenID));
+    appCards.add(createAppCard('images/Todoey.png', 16, 'Todoey',
+        Colors.lightBlue, FlashChatMainScreen.flashChatHomeScreenID));
     return appCards;
   }
 
