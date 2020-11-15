@@ -23,6 +23,7 @@ Map<String, String> appDescription = {
       'Bitcoin Ticker is a crypto currency price checking app. By the end of the module, you\'ll be able to monitor your bitcoin investents on the move!',
   'Flash Chat':
       'Flash Chat is a modern messaging app where users can sign up and log in to chat.',
+  'Todoey': 'Todoey To-Do list app to keep track of all your tasks.',
 };
 
 const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
