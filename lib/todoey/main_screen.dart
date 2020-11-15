@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_complete_app_by_appbrewery/widgets/app_main_widget.dart';
-import 'package:the_complete_app_by_appbrewery/todoey/tasks_screen.dart';
+import 'package:the_complete_app_by_appbrewery/todoey/screens/tasks_screen.dart';
 
 class TodoeyMainScreen extends StatelessWidget {
   static const String todoeyHomeScreenID = 'Todoey';
