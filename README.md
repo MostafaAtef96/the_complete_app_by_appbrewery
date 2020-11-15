@@ -1,21 +1,21 @@
 # the Complete App By App Brewery
 
-During the journey of learning Mobile Application development using Flutter in the course by London App Brewery I have come across many interesting apps each was meant to introduce a new concept of Flutter programming.
+During the journey of learning Mobile Application development using Flutter in the course by [London App Brewery](https://www.appbrewery.co) I have come across many interesting apps each was meant to introduce a new concept of Flutter programming.
 
-In this repository, I am going to use Flutter to create a mobile application that contains all exercises and challenges demonstrated in The Complete 2020 Flutter Development Bootcamp with Dart by App Brewery.
+In this repository, I have combined all the projects and challenges in [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart) in a single Flutter app in.
 
 ## Before You Start
 The following apps require API keys to work as it should:
 * Clima
 * Bitcoin Ticker
 
-To be able run tose apps without any errors, create a config.dart file and add a value to the following attributes:
+To be able run those apps without any errors, create a config.dart file and provide the following keys:
 * openWeatherMapApiKey, you can get this key from [Open Weather Map](https://openweathermap.org) website.
 * CoinApiApiKey, you can get this key from [Coin API](https://www.coinapi.io) website.
 
 Regarding the **Flash Chat** app you'll have to set up a project on [Firebase](https://console.firebase.google.com/) and add the required configuration. However, a demo GIF is added to this Readme for each of the apps mentioned above to show their functionality.
 
-The colour theme of the last three apps was Light Blue Accent, that is why their cards are colour identical. IT LOOKS UGLY BUT IT IS NOT MY FAULT! lets get into business!
+The colour theme of the last three apps was Light Blue Accent, that is why their cards are colour identical. IT DOES NOT LOOK NICE BUT IT IS NOT MY FAULT HAHA!
 
 ## I Am Rich
 
@@ -79,7 +79,7 @@ In this App, you will learn:
 <img src="ReadmeMedia/Dicee.gif" width="500">
 </p>
 
-### What is Dicee?
+### What is Dicee?  
 
 **Dicee** is a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!
 
@@ -112,8 +112,6 @@ In this App, you will learn:
 
 the process of building this app will solidify what you've learnt in the Dicee tutorial. This app will guide you through the steps required to build an 8 ball app and you will be applying what you have learnt about Stateless and Stateful Flutter widgets.
 
-We’re going to make 
-
 ### Notes
 * App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
@@ -126,9 +124,9 @@ We’re going to make
 
 ### What is Xylophone?
 
-In **Xylophone** module we will be diving into more Dart programming concepts and learning how to use open source Flutter packages. By the end of this module, you should be comfortable using Flutter packages and building repeated widgets.
+In **Xylophone** We’re going to make a music app that plays Xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.
 
-We’re going to make a music app that plays Xylophone sounds. For every Beethoven out there, this will let you unleash your musical talent where ever you are.
+During this module, we will be diving into more Dart programming concepts and learning how to use open source Flutter packages. By the end of this module, you should be comfortable using Flutter packages and building repeated widgets.
 
 ### Objectives
 
@@ -137,7 +135,7 @@ In this App, you will learn:
 * How to play sound on both iOS and Android.
 * How to generate repeated user interface Widgets.
 * How to use Dart functions that can take input arguments as well as return an output.
-* Dart arrow syntax for writing one line functions.
+* About the Dart arrow syntax for writing one line functions.
 
 ### Notes
 * Image was downloaded from pngtree.com
@@ -159,11 +157,11 @@ This module target is reviewing Stateful and Stateless Widgets as well as learni
 
 In this App, you will learn:
 * Modularising your code into separate classes.
-* Dart classes and objects.
-* Using class constructors.
-* The four pillars of OOP
-* Extracting Widgets to refactor your code.
-* Private and public modifiers in Dart.
+* About Dart Classes and Objects.
+* How to use Class Constructors.
+* About the Four Pillars of OOP
+* How to extract Widgets to refactor your code.
+* About Private and Public modifiers in Dart.
 * How to use Dart lists.
 * The difference between var, const and final.
 
@@ -179,7 +177,7 @@ In this App, you will learn:
 
 ### What is Destini?
 
-**Destini** is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module (Quizzler) to use Dart OOP principles to build a well organised project.
+**Destini** is a choose your own adventure game like Bandersnatch. In the process of building this app, you should apply your knowledge from the last module - Quizzler - to use Dart OOP principles to build a well organised project.
 
 ### Notes
 * App Icon was downloaded from pngtree.com
@@ -206,9 +204,9 @@ In this App, you will learn:
 * How to use the GestureDetector Widget to detect more than just a tap.
 * How to use custom colour palettes by using hex codes.
 * How to customise Flutter Widgets to achieve a specific design style.
-* Understand Dart Enums and the Ternary Operator.
-* Learn about composition vs. inheritance and the Flutter way of creating custom UI.
-* Understand the difference between const and final in Dart and when to use each.
+* About Dart Enums and the Ternary Operator.
+* About Composition vs. Inheritance and the Flutter way of creating custom UI.
+* About the difference between const and final in Dart and when to use each.
 
 ### Notes
 * App Icon was downloaded from pngtree.com
@@ -229,15 +227,15 @@ The objective of this tutorial is to learn about asynchronous programming in Dar
 ### Objectives
 In this App, you will learn:
 * How to use Dart to perform asynchronous tasks.
-* Understand async and await.
-* Learn about Futures and how to work with them.
+* About Async and Await.
+* About Futures and how to work with them.
 * How to network with the Dart http package.
 * What APIs are and how to use them to get data from the internet.
 * What JSONs are and how to parse them using the Dart convert package.
 * How to pass data forwards and backwards between screens using the Navigator.
 * How to handle exceptions in Dart using try/catch/throw.
-* Learn about the lifecycle of Stateful Widgets and how to override them.
-* How to use the Geolocator package to get live location data for both iOS and Android.
+* About the lifecycle of Stateful Widgets and how to override them.
+* How to use the [Geolocator package](https://pub.dev/packages/geolocator) to get live location data for both iOS and Android.
 * How to use the TextField Widget to take user input.
 
 ### Notes
@@ -253,7 +251,7 @@ In this App, you will learn:
 
 ### What is Bitcoin Ticker?
 
-**Bitcoin Ticker** is a crypto currency price checking app. By the end of the module, you\'ll be able to monitor your bitcoin investents on the move!
+**Bitcoin Ticker** is a crypto currency price checking app. By the end of the module, you\'ll be able to monitor your bitcoin investments on the move!
 
 The objective of this tutorial is to learn about using Cupertino and Material Widgets in parallel and providing a different user interface depending on the platform.
 
@@ -263,7 +261,7 @@ In this App, you will learn:
 * How to loop through code using Dart for and for-in loops.
 * How to use Cupertino Widgets in your app.
 * How to check the platform your app is being run on to customise the UI for that platform.
-* Revise previous concepts by completing the challenges.
+* And you'll revise previous concepts by completing the challenges.
 
 ### Notes
 * App Icon was downloaded from pngtree.com
@@ -287,10 +285,10 @@ In this App, you will learn:
 * How to incorporate Firebase into your Flutter projects.
 * How to use Firebase authentication to register and sign in users.
 * How to create beautiful animations using the Flutter Hero widget.
-* How to create custom aniamtions using Flutter's animation controller.
-* All about mixins and how they differ from superclasses.
+* How to create custom animations using Flutter's animation controller.
+* All about Mixins and how they differ from superclasses.
 * About Streams and how they work.
-* To use ListViews to build scrolling views.
+* How to use ListViews to build scrolling views.
 * How to use Firebase Cloud Firestore to store and retrieve data on the fly.
 
 ### Notes
