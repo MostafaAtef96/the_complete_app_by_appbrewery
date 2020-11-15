@@ -4,6 +4,17 @@ During the journey of learning Mobile Application development using Flutter in t
 
 In this repository, I am going to use Flutter to create a mobile application that contains all exercises and challenges demonstrated in The Complete 2020 Flutter Development Bootcamp with Dart by App Brewery.
 
+## Before you start
+The following apps require API keys to work as it should:
+* Clima
+* Bitcoin Ticker
+To be able run tose apps without any errors, create a config.dart file and add a value to the following attributes:
+* openWeatherMapApiKey, you can get this key from [Open Weather Map](https://openweathermap.org) website.
+* CoinApiApiKey, you can get this key from [Coin API](https://www.coinapi.io) website.
+Regarding the **Flash Chat** app you'll have to set up a project on [Firebase](https://console.firebase.google.com/) and add the required configuration. However, a demo GIF is added to this Readme for each of the apps mentioned above to show their functionality.
+
+The colour theme of the last three apps was Light Blue Accent, that is why their cards are colour identical. IT LOOKS UGLY but IT IS NOT MY FAULT! lets get into business!
+
 ## I Am Rich
 
 <p align="center">
@@ -283,7 +294,7 @@ In this App, you will learn:
 ### Notes
 * App Icon was downloaded from pngtree.com
 * Demo Gif was downloaded from the course resources.
-* To use the app you must set up a project on [Firebase](https://console.firebase.google.com/) and provide an API key in the config.dart file.
+* To use the app you must set up a project on [Firebase](https://console.firebase.google.com/).
 
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.1.0
