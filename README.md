@@ -308,3 +308,4 @@ In this App, you will learn:
 * [Firebase Auth](https://pub.dev/packages/firebase_auth) v^0.18.3
 * [Cloud Firestore](https://pub.dev/packages/cloud_firestore) v^0.14.3
 * [Modal Progress Hud](https://pub.dev/packages/modal_progress_hud) v^0.1.3
+* [Provider](https://pub.dev/packages/provider) v^4.3.2+2 
