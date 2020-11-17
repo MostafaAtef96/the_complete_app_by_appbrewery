@@ -2,7 +2,7 @@
 
 During the journey of learning Mobile Application development using Flutter in the course by [London App Brewery](https://www.appbrewery.co) I have come across many interesting apps each was meant to introduce a new concept of Flutter programming.
 
-In this repository, I have combined all the projects and challenges in [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart) in a single Flutter app in.
+In this repository, I have combined all the projects and challenges in [The Complete 2020 Flutter Development Bootcamp with Dart](https://www.udemy.com/course/flutter-bootcamp-with-dart) in a single Flutter app.
 
 ## Before You Start
 The following apps require API keys to work as it should:
