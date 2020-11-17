@@ -299,8 +299,7 @@ In this App, you will learn:
 ## Todoey
 
 <p align="center">
-<img src="ReadmeMedia/TodoeyA.jpeg" width="500">
-<img src="ReadmeMedia/TodoeyB.jpeg" width="500">
+<img src="ReadmeMedia/Todoey.mp4" width="500">
 </p>
 
 ### What is Todoey?
@@ -308,6 +307,13 @@ In this App, you will learn:
 **Todoey** To-Do list app to keep track of all your tasks.
 
 The objective of this tutorial is to understand how to manage state in Flutter. We'll look at various Flutter architecture choices and learn to use the officially recommended Provider package to manage our app state.
+
+### What Can you do with Todoey?
+Well, the favour goes to the State Management, you can:
+
+* Add new tasks.
+* Check or uncheck your current tasks.
+* Delete tasks.
 
 ### Objectives
 In this App, you will learn:
