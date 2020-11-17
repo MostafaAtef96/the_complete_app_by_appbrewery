@@ -299,7 +299,7 @@ In this App, you will learn:
 ## Todoey
 
 <p align="center">
-<img src="ReadmeMedia/Todoey.mp4" width="500">
+<img src="ReadmeMedia/Todoey.gif" width="500">
 </p>
 
 ### What is Todoey?
@@ -309,7 +309,7 @@ In this App, you will learn:
 The objective of this tutorial is to understand how to manage state in Flutter. We'll look at various Flutter architecture choices and learn to use the officially recommended Provider package to manage our app state.
 
 ### What Can you do with Todoey?
-Well, the favour goes to the State Management, you can:
+Well, thanks to the State Management that allowed us to:
 
 * Add new tasks.
 * Check or uncheck your current tasks.
