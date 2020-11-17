@@ -296,6 +296,36 @@ In this App, you will learn:
 * Demo Gif was downloaded from the course resources.
 * To use the app you must set up a project on [Firebase](https://console.firebase.google.com/).
 
+## Todoey
+
+<p align="center">
+<img src="ReadmeMedia/TodoeyA.jpeg" width="500">
+<img src="ReadmeMedia/TodoeyB.jpeg" width="500">
+</p>
+
+### What is Todoey?
+
+**Todoey** To-Do list app to keep track of all your tasks.
+
+The objective of this tutorial is to understand how to manage state in Flutter. We'll look at various Flutter architecture choices and learn to use the officially recommended Provider package to manage our app state.
+
+### Objectives
+In this App, you will learn:
+
+* About the state and why we need to manage it.
+* About the difference between ephemeral (local) state and app state.
+* About the problems with simply relying on setState().
+* About the concept of Prop Drilling.
+* Various popular ways of managing app state for Flutter projects.
+* About the List Builder.
+* How to use the Flutter BottomSheet Widget.
+* How to lift state up to be able to access it from children widgets.
+* About design patterns and why they are useful.
+* How the Provider package works and how to use it to manage app state.
+
+### Notes
+* App Icon was downloaded from pngtree.com
+
 ## Packages
 * [RFlutter Alert](https://pub.dev/packages/rflutter_alert) v1.1.0
 * [Audio Players](https://pub.dev/packages/audioplayers) v0.16.2
@@ -308,4 +338,4 @@ In this App, you will learn:
 * [Firebase Auth](https://pub.dev/packages/firebase_auth) v^0.18.3
 * [Cloud Firestore](https://pub.dev/packages/cloud_firestore) v^0.14.3
 * [Modal Progress Hud](https://pub.dev/packages/modal_progress_hud) v^0.1.3
-* [Provider](https://pub.dev/packages/provider) v^4.3.2+2 
+* [Provider](https://pub.dev/packages/provider) v^4.3.2+2
