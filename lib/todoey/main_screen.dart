@@ -11,10 +11,7 @@ class TodoeyMainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppMainWidget(
       appTitle: 'Todoey',
-      appWidgetTree: ChangeNotifierProvider(
-        create: (context) => TaskData(),
-        child: TasksScreen(),
-      ),
+      appWidgetTree: TasksScreen(),
     );
   }
 }

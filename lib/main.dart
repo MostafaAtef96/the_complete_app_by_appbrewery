@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:the_complete_app_by_appbrewery/todoey/models/task_data.dart';
+import 'package:the_complete_app_by_appbrewery/todoey/models/tasks.dart';
 import 'home_screen.dart';
 import 'package:the_complete_app_by_appbrewery/i_am_rich/main_screen.dart';
 import 'package:the_complete_app_by_appbrewery/dicee/main_screen.dart';
@@ -28,35 +31,41 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Return the main screen of the Full App.
-    return MaterialApp(
-      initialRoute: HomeScreen.screenID,
-      routes: {
-        HomeScreen.screenID: (context) => HomeScreen(),
-        IAmRichMainScreen.iAmRichHomeScreenID: (context) => IAmRichMainScreen(),
-        IAmPoorMainScreen.iAmPoorHomeScreenID: (context) => IAmPoorMainScreen(),
-        MiCardMainScreen.miCardHomeScreenID: (context) => MiCardMainScreen(),
-        DiceeMainScreen.diceeHomeScreenID: (context) => DiceeMainScreen(),
-        MagicBallMainScreen.magicBallHomeScreenID: (context) =>
-            MagicBallMainScreen(),
-        XylophoneMainScreen.xylophoneHomeScreenID: (context) =>
-            XylophoneMainScreen(),
-        QuizzlerMainScreen.quizzlerHomeScreenID: (context) =>
-            QuizzlerMainScreen(),
-        DestiniMainScreen.destiniHomeScreenID: (context) => DestiniMainScreen(),
-        BMIMainScreen.bmiHomeScreenID: (context) => BMIMainScreen(),
-        ClimaMainScreen.climaHomeScreenID: (context) => ClimaMainScreen(),
-        BitcoinTickerMainScreen.bitcoinTickerHomeScreenID: (context) =>
-            BitcoinTickerMainScreen(),
-        FlashChatMainScreen.flashChatHomeScreenID: (context) =>
-            FlashChatMainScreen(),
-        FlashChatLoginScreen.flashChatLoginScreenID: (context) =>
-            FlashChatLoginScreen(),
-        FlashChatRegistrationScreen.flashChatRegistrationScreenID: (context) =>
-            FlashChatRegistrationScreen(),
-        FlashChatChatScreen.flashChatChatScreenID: (context) =>
-            FlashChatChatScreen(),
-        TodoeyMainScreen.todoeyHomeScreenID: (context) => TodoeyMainScreen(),
-      },
+    return ChangeNotifierProvider(
+      create: (context) => TaskData(),
+      child: MaterialApp(
+        initialRoute: HomeScreen.screenID,
+        routes: {
+          HomeScreen.screenID: (context) => HomeScreen(),
+          IAmRichMainScreen.iAmRichHomeScreenID: (context) =>
+              IAmRichMainScreen(),
+          IAmPoorMainScreen.iAmPoorHomeScreenID: (context) =>
+              IAmPoorMainScreen(),
+          MiCardMainScreen.miCardHomeScreenID: (context) => MiCardMainScreen(),
+          DiceeMainScreen.diceeHomeScreenID: (context) => DiceeMainScreen(),
+          MagicBallMainScreen.magicBallHomeScreenID: (context) =>
+              MagicBallMainScreen(),
+          XylophoneMainScreen.xylophoneHomeScreenID: (context) =>
+              XylophoneMainScreen(),
+          QuizzlerMainScreen.quizzlerHomeScreenID: (context) =>
+              QuizzlerMainScreen(),
+          DestiniMainScreen.destiniHomeScreenID: (context) =>
+              DestiniMainScreen(),
+          BMIMainScreen.bmiHomeScreenID: (context) => BMIMainScreen(),
+          ClimaMainScreen.climaHomeScreenID: (context) => ClimaMainScreen(),
+          BitcoinTickerMainScreen.bitcoinTickerHomeScreenID: (context) =>
+              BitcoinTickerMainScreen(),
+          FlashChatMainScreen.flashChatHomeScreenID: (context) =>
+              FlashChatMainScreen(),
+          FlashChatLoginScreen.flashChatLoginScreenID: (context) =>
+              FlashChatLoginScreen(),
+          FlashChatRegistrationScreen.flashChatRegistrationScreenID:
+              (context) => FlashChatRegistrationScreen(),
+          FlashChatChatScreen.flashChatChatScreenID: (context) =>
+              FlashChatChatScreen(),
+          TodoeyMainScreen.todoeyHomeScreenID: (context) => TodoeyMainScreen(),
+        },
+      ),
     );
   }
 }
